@@ -50,7 +50,7 @@ namespace inferno {
             inferno::graphics::TextureHandle operator[](std::string texture_name) const;
 
             // Dtor
-            ~TextureManager();
+            ~TextureManager() {textures.clear();}
         private:
             std::map<size_t, TextureHandle> textures;
             SDL_Renderer* renderTarget;

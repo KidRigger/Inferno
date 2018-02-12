@@ -3,6 +3,7 @@
 #include <SDL2_image/SDL_image.h>
 #include "inferno/graphics/Display.hpp"
 #include "inferno/graphics/Texture.hpp"
+#include "inferno/graphics/TextureManager.hpp"
 
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
@@ -18,7 +19,9 @@ int main(int argc, char* argv[]) {
 
     inferno::graphics::Display disp(640,480);
 
-    inferno::graphics::TextureHandle h1 = std::make_shared<inferno::graphics::Texture>(disp.GetRenderer(),"../character_hurt.png","charhurt");
+    inferno::graphics::TextureManager tm(disp.GetRenderer());
+    tm.Load("../character_hurt.png","charhurt");
+    inferno::graphics::TextureHandle h1 = tm["charhurt"];
 
     SDL_Event ev;
     bool running = true;
@@ -31,7 +34,7 @@ int main(int argc, char* argv[]) {
         disp.Clear();
         disp.Refresh();
         SDL_Delay(200);
-        SDL_RenderCopy(disp.GetRenderer(), h1->GetTexture(), h1->GetQuad().GetRect(), NULL);
+        SDL_RenderCopy(disp.GetRenderer(), h1->GetTexture(),  NULL, h1->GetQuad().GetRect());
         disp.Refresh();
         SDL_Delay(200);
     }

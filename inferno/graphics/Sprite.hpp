@@ -26,7 +26,7 @@ namespace inferno {
 
             // Full texture as sprite
             Sprite(TextureHandle texture_handle):
-            txr(texture_handle), region(texture_handle->GetRectangle()) {}
+            txr(texture_handle), region(texture_handle->GetQuad()) {}
             // Default ctor
             Sprite() = default;
 

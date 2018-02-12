@@ -436,6 +436,7 @@ CMakeFiles/SDLtest.dir/main.cpp.o
  /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Display.hpp
  /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Rectangle.hpp
  /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Texture.hpp
+ /Users/Eon/Development/GameDev/Inferno/inferno/graphics/TextureManager.hpp
  /Users/Eon/Development/GameDev/Inferno/main.cpp
  /usr/local/include/Eigen/Core
  /usr/local/include/Eigen/src/Core/Array.h

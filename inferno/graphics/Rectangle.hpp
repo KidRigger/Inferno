@@ -21,21 +21,21 @@ namespace inferno {
         class Rectangle {
         public:
             // Default constructor, all zero
-            Rectangle(): position(0,0), diagonal(0,0) {}
+            Rectangle(): rect{0,0,0,0} {}
 
             // Actual constructor
-            Rectangle(float x, float y, float w, float h):
-            position(x,y), diagonal(w,h) {}
+            Rectangle(int x, int y, int w, int h):
+            rect{x,y,w,h} {}
 
             // Special Span Constructor
             // Takes in the span of the rectangle to construct a
             // rectangle at origin with given span.
-            Rectangle(Vector2 dimensions): rect(0,0,dimensions.x(),dimensions.y()) {}
+            Rectangle(Vector2 dimensions): rect{0,0,(int)dimensions.x(),(int)dimensions.y()} {}
 
             // Component Constructor.
             // Takes in position and dimensions to construct a rectangle
             // at the given position
-            Rectangle(Vector2 position, Vector2 dimensions): rect(position.x(),position.y(),dimensions.x(),dimensions.y()) {}
+            Rectangle(Vector2 position, Vector2 dimensions): rect{(int)position.x(),(int)position.y(),(int)dimensions.x(),(int)dimensions.y()} {}
 
             // Copy Constructor and Move Constructor
             Rectangle(const Rectangle& rect) = default;
@@ -49,29 +49,29 @@ namespace inferno {
             }
 
             // Returns the position of top left corner of the rectangle
-            Vector2& GetPosition(void) {
-                return position;
+            Vector2 GetPosition(void) {
+                return {rect.x,rect.y};
             }
 
             // Returns a Vector2 containing the diagonal
-            Vector2& GetDiagonal(void) {
-                return {rect.};
+            Vector2 GetDiagonal(void) {
+                return {rect.w,rect.h};
             }
 
             // Getters with each data piece.
-            int x(void) {
+            int& x(void) {
                 return rect.x;
             }
 
-            int y(void) {
+            int& y(void) {
                 return rect.y;
             }
 
-            int w(void) {
+            int& w(void) {
                 return rect.w;
             }
 
-            int h(void) {
+            int& h(void) {
                 return rect.h;
             }
 

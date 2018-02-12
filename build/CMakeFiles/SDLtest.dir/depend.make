@@ -435,6 +435,7 @@ CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o: /usr/local/include
 CMakeFiles/SDLtest.dir/main.cpp.o: ../inferno/graphics/Display.hpp
 CMakeFiles/SDLtest.dir/main.cpp.o: ../inferno/graphics/Rectangle.hpp
 CMakeFiles/SDLtest.dir/main.cpp.o: ../inferno/graphics/Texture.hpp
+CMakeFiles/SDLtest.dir/main.cpp.o: ../inferno/graphics/TextureManager.hpp
 CMakeFiles/SDLtest.dir/main.cpp.o: ../main.cpp
 CMakeFiles/SDLtest.dir/main.cpp.o: /usr/local/include/Eigen/Core
 CMakeFiles/SDLtest.dir/main.cpp.o: /usr/local/include/Eigen/src/Core/Array.h
