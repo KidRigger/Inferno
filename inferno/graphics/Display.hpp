@@ -22,7 +22,7 @@ namespace inferno {
                 // TODO: Move to Engine ctor
                 if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
                     std::cerr << "SDL could not initialize. " << SDL_GetError() << std::endl;
-                    return false;
+                    throw std::runtime_error("Failed to start");
                 }
 
                 window = SDL_CreateWindow(
@@ -35,11 +35,17 @@ namespace inferno {
 
                 if (window == nullptr) {
                     std::cerr << "Window could not be opened." << SDL_GetError() << std::endl;
-                    return false;
+                    throw std::runtime_error("Failed to create display");
                 }
 
-                screenSurface = SDL_GetWindowSurface(window);
-                return true;
+                //screenSurface = SDL_GetWindowSurface(window);
+
+                renderTarget = SDL_CreateRenderer(window,-1,SDL_RENDERER_ACCELERATED);
+
+                if (renderTarget == nullptr) {
+                    std::cerr << "Renderer could not be created." << SDL_GetError() << std::endl;
+                    throw std::runtime_error("Renderer creation failed.");
+                }
             }
 
             // Resizing the display using allegros function
@@ -49,12 +55,12 @@ namespace inferno {
 
             // Update the display
             void Refresh() {
-                SDL_UpdateWindowSurface(window);
+                SDL_RenderPresent(renderTarget);
             }
 
             // Clear the display
             void Clear() {
-                SDL_FillRect(screenSurface,NULL,SDL_MapRGB());
+                SDL_RenderClear(renderTarget);
             }
 
             // Set background color
@@ -65,12 +71,27 @@ namespace inferno {
             // Destructor destroys display
             ~Display() {
                 // TODO: dtor
+                SDL_DestroyWindow(window);
+                SDL_Quit();
             }
+
+            SDL_Window* GetWindow() {
+                return window;
+            }
+
+            // SDL_Surface* GetWindowSurface() {
+            //     return screenSurface;
+            // }
+
+            SDL_Renderer* GetRenderer() {
+                return renderTarget;
+            }
+
         private:
             SDL_Window* window = nullptr;
-            SDL_Surface* screenSurface = nullptr;
+            //SDL_Surface* screenSurface = nullptr;
+            SDL_Renderer* renderTarget = nullptr;
             int width, height;
-            ALLEGRO_COLOR background_color;
         };
     }
 }

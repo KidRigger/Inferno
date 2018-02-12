@@ -46,7 +46,7 @@ namespace inferno {
             }
 
             // Get the region of the entire texture
-            Quad GetRectangle() const;
+            Quad GetQuad() const;
 
             // Get the hash of the texture_id string
             size_t GetHash() const;

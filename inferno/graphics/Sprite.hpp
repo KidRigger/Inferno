@@ -13,29 +13,29 @@
 
 namespace inferno {
     namespace graphics {
-        
+
         // class Sprite
         // Just holds together a texture handle and the region mapping
         // To take one specific sprite out of a spritemap.
         class Sprite {
-            
+
         public:
             // Simple ctor
             Sprite(TextureHandle texture_handle, Quad region):
             txr(texture_handle),region(region) {}
-            
+
             // Full texture as sprite
             Sprite(TextureHandle texture_handle):
             txr(texture_handle), region(texture_handle->GetRectangle()) {}
             // Default ctor
             Sprite() = default;
-            
+
             // Gets TextureHandle
             TextureHandle GetTexture() { return txr; }
-            
+
             // Gets the region
             Quad GetRegion() { return region; }
-            
+
         private:
             TextureHandle txr;
             Quad region;

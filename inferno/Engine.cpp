@@ -11,22 +11,18 @@
 
 
 inferno::Engine::Engine():run(true) {
-    if(!al_is_system_installed()) {
-        if (!al_init()) {
-            throw "Allegro could not be initialized";
-        }
-        else {
-            std::cerr << "Allegro Initialized" << std::endl;
-        }
-    }
-    else {
-        std::cerr << "Warning: Second engine created. Allegro already initialized" << std::endl;
+    if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
+        std::cerr << "SDL could not initialize. " << SDL_GetError() << std::endl;
+        throw std::runtime_error("Failed to start");
     }
 }
 
 void inferno::Engine::Rest(float timeInSeconds) {
-    std::cerr << "Rest for " << timeInSeconds << " seconds" << std::endl;
-    al_rest(timeInSeconds);
+    // TODO: Sleep
+}
+
+inferno::Engine::~Engine() {
+    SDL_Quit();
 }
 
 template <class Level>
@@ -40,5 +36,3 @@ void inferno::Engine::Run() {
     }
     lvl.UnloadContent();
 }
-
-

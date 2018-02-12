@@ -22,7 +22,7 @@ namespace inferno {
         class TextureManager {
         public:
             // default ctor
-            TextureManager() = default;
+            TextureManager(SDL_Renderer* renderTarget) : renderTarget(renderTarget) {}
 
             // Copy semantics disabled
             TextureManager(const TextureManager& texture_manager) = default;
@@ -41,7 +41,7 @@ namespace inferno {
 
             void LoadAll(std::vector<std::string> texture_filenames,
                          std::vector<std::string> texture_names);
- 
+
             void Unload(std::string texture_name);
             void UnloadAll();
 
@@ -53,6 +53,7 @@ namespace inferno {
             ~TextureManager();
         private:
             std::map<size_t, TextureHandle> textures;
+            SDL_Renderer* renderTarget;
         };
     }
 }

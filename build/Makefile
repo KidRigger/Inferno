@@ -123,6 +123,33 @@ SDLtest/fast:
 	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/build
 .PHONY : SDLtest/fast
 
+inferno/graphics/Sprite.o: inferno/graphics/Sprite.cpp.o
+
+.PHONY : inferno/graphics/Sprite.o
+
+# target to build an object file
+inferno/graphics/Sprite.cpp.o:
+	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.o
+.PHONY : inferno/graphics/Sprite.cpp.o
+
+inferno/graphics/Sprite.i: inferno/graphics/Sprite.cpp.i
+
+.PHONY : inferno/graphics/Sprite.i
+
+# target to preprocess a source file
+inferno/graphics/Sprite.cpp.i:
+	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.i
+.PHONY : inferno/graphics/Sprite.cpp.i
+
+inferno/graphics/Sprite.s: inferno/graphics/Sprite.cpp.s
+
+.PHONY : inferno/graphics/Sprite.s
+
+# target to generate assembly for a file
+inferno/graphics/Sprite.cpp.s:
+	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.s
+.PHONY : inferno/graphics/Sprite.cpp.s
+
 inferno/graphics/Texture.o: inferno/graphics/Texture.cpp.o
 
 .PHONY : inferno/graphics/Texture.o
@@ -149,6 +176,33 @@ inferno/graphics/Texture.s: inferno/graphics/Texture.cpp.s
 inferno/graphics/Texture.cpp.s:
 	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/Texture.cpp.s
 .PHONY : inferno/graphics/Texture.cpp.s
+
+inferno/graphics/TextureManager.o: inferno/graphics/TextureManager.cpp.o
+
+.PHONY : inferno/graphics/TextureManager.o
+
+# target to build an object file
+inferno/graphics/TextureManager.cpp.o:
+	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o
+.PHONY : inferno/graphics/TextureManager.cpp.o
+
+inferno/graphics/TextureManager.i: inferno/graphics/TextureManager.cpp.i
+
+.PHONY : inferno/graphics/TextureManager.i
+
+# target to preprocess a source file
+inferno/graphics/TextureManager.cpp.i:
+	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.i
+.PHONY : inferno/graphics/TextureManager.cpp.i
+
+inferno/graphics/TextureManager.s: inferno/graphics/TextureManager.cpp.s
+
+.PHONY : inferno/graphics/TextureManager.s
+
+# target to generate assembly for a file
+inferno/graphics/TextureManager.cpp.s:
+	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.s
+.PHONY : inferno/graphics/TextureManager.cpp.s
 
 main.o: main.cpp.o
 
@@ -186,9 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... SDLtest"
+	@echo "... inferno/graphics/Sprite.o"
+	@echo "... inferno/graphics/Sprite.i"
+	@echo "... inferno/graphics/Sprite.s"
 	@echo "... inferno/graphics/Texture.o"
 	@echo "... inferno/graphics/Texture.i"
 	@echo "... inferno/graphics/Texture.s"
+	@echo "... inferno/graphics/TextureManager.o"
+	@echo "... inferno/graphics/TextureManager.i"
+	@echo "... inferno/graphics/TextureManager.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

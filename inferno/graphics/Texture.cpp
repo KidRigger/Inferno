@@ -40,7 +40,7 @@ texture_id(texture_name), hash_id(std::hash<std::string>{}(texture_name)) {
     size.h() = h;
 }
 
-inferno::graphics::Quad inferno::graphics::Texture::GetRectangle() const {
+inferno::graphics::Quad inferno::graphics::Texture::GetQuad() const {
     return size;
 }
 

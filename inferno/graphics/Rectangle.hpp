@@ -30,12 +30,12 @@ namespace inferno {
             // Special Span Constructor
             // Takes in the span of the rectangle to construct a
             // rectangle at origin with given span.
-            Rectangle(Vector2 dimensions): position(0,0), diagonal(dimensions) {}
+            Rectangle(Vector2 dimensions): rect(0,0,dimensions.x(),dimensions.y()) {}
 
             // Component Constructor.
             // Takes in position and dimensions to construct a rectangle
             // at the given position
-            Rectangle(Vector2 position, Vector2 dimensions): position(position), diagonal(dimensions) {}
+            Rectangle(Vector2 position, Vector2 dimensions): rect(position.x(),position.y(),dimensions.x(),dimensions.y()) {}
 
             // Copy Constructor and Move Constructor
             Rectangle(const Rectangle& rect) = default;
@@ -44,9 +44,8 @@ namespace inferno {
             Rectangle& operator=(Rectangle&& rect) = default;
 
             // SDL Compatibility
-            SDL_Rect GetRectangle() {
-                SDL_Rect rect = {(int)position.x(),(int)position.y(),(int)diagonal.x(),(int)diagonal.y()};
-                return rect;
+            SDL_Rect* GetRect() {
+                return &rect;
             }
 
             // Returns the position of top left corner of the rectangle
@@ -56,29 +55,28 @@ namespace inferno {
 
             // Returns a Vector2 containing the diagonal
             Vector2& GetDiagonal(void) {
-                return diagonal;
+                return {rect.};
             }
 
             // Getters with each data piece.
-            float& x(void) {
-                return position.x();
+            int x(void) {
+                return rect.x;
             }
 
-            float& y(void) {
-                return position.y();
+            int y(void) {
+                return rect.y;
             }
 
-            float& w(void) {
-                return diagonal.x();
+            int w(void) {
+                return rect.w;
             }
 
-            float& h(void) {
-                return diagonal.y();
+            int h(void) {
+                return rect.h;
             }
 
         private:
-            Vector2 position;
-            Vector2 diagonal;
+            SDL_Rect rect;
         };
 
         typedef Rectangle Quad;

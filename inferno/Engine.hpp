@@ -23,6 +23,7 @@ namespace inferno {
         template <class Game> void Run();
         static void Rest(float timeInSeconds);
         bool IsEngineReady();
+        ~Engine();
     };
 }
 

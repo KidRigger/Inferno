@@ -13,7 +13,7 @@
 void inferno::graphics::TextureManager::Load(std::string texture_filename,
                                         std::string texture_name) {
 
-    TextureHandle handle = std::make_shared<Texture>(texture_filename, texture_name);
+    TextureHandle handle = std::make_shared<Texture>(renderTarget,texture_filename, texture_name);
 
     this->textures.insert({handle->GetHash(), handle});
 }
@@ -23,7 +23,7 @@ void inferno::graphics::TextureManager::LoadAll(
     std::vector<std::string> texture_names) {
 
     textures.clear();
-    
+
     if(texture_filenames.size() != texture_names.size()) {
         throw std::runtime_error("Number of filenames and \
 		number of names of textures must be same.");

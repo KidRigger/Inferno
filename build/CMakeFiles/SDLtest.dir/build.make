@@ -105,19 +105,71 @@ CMakeFiles/SDLtest.dir/inferno/graphics/Texture.cpp.o.provides: CMakeFiles/SDLte
 CMakeFiles/SDLtest.dir/inferno/graphics/Texture.cpp.o.provides.build: CMakeFiles/SDLtest.dir/inferno/graphics/Texture.cpp.o
 
 
+CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.o: CMakeFiles/SDLtest.dir/flags.make
+CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.o: ../inferno/graphics/Sprite.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Eon/Development/GameDev/Inferno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.o -c /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Sprite.cpp
+
+CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Sprite.cpp > CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.i
+
+CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Sprite.cpp -o CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.s
+
+CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.o.requires:
+
+.PHONY : CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.o.requires
+
+CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.o.provides: CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.o.requires
+	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.o.provides.build
+.PHONY : CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.o.provides
+
+CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.o.provides.build: CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.o
+
+
+CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o: CMakeFiles/SDLtest.dir/flags.make
+CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o: ../inferno/graphics/TextureManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Eon/Development/GameDev/Inferno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o -c /Users/Eon/Development/GameDev/Inferno/inferno/graphics/TextureManager.cpp
+
+CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Eon/Development/GameDev/Inferno/inferno/graphics/TextureManager.cpp > CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.i
+
+CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Eon/Development/GameDev/Inferno/inferno/graphics/TextureManager.cpp -o CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.s
+
+CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o.requires:
+
+.PHONY : CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o.requires
+
+CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o.provides: CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o.requires
+	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o.provides.build
+.PHONY : CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o.provides
+
+CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o.provides.build: CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o
+
+
 # Object files for target SDLtest
 SDLtest_OBJECTS = \
 "CMakeFiles/SDLtest.dir/main.cpp.o" \
-"CMakeFiles/SDLtest.dir/inferno/graphics/Texture.cpp.o"
+"CMakeFiles/SDLtest.dir/inferno/graphics/Texture.cpp.o" \
+"CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.o" \
+"CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o"
 
 # External object files for target SDLtest
 SDLtest_EXTERNAL_OBJECTS =
 
 SDLtest: CMakeFiles/SDLtest.dir/main.cpp.o
 SDLtest: CMakeFiles/SDLtest.dir/inferno/graphics/Texture.cpp.o
+SDLtest: CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.o
+SDLtest: CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o
 SDLtest: CMakeFiles/SDLtest.dir/build.make
 SDLtest: CMakeFiles/SDLtest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Eon/Development/GameDev/Inferno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable SDLtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Eon/Development/GameDev/Inferno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable SDLtest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDLtest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +179,8 @@ CMakeFiles/SDLtest.dir/build: SDLtest
 
 CMakeFiles/SDLtest.dir/requires: CMakeFiles/SDLtest.dir/main.cpp.o.requires
 CMakeFiles/SDLtest.dir/requires: CMakeFiles/SDLtest.dir/inferno/graphics/Texture.cpp.o.requires
+CMakeFiles/SDLtest.dir/requires: CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.o.requires
+CMakeFiles/SDLtest.dir/requires: CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o.requires
 
 .PHONY : CMakeFiles/SDLtest.dir/requires
 

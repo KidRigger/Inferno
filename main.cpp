@@ -1,6 +1,8 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 #include <SDL2_image/SDL_image.h>
+#include "inferno/graphics/Display.hpp"
+#include "inferno/graphics/Texture.hpp"
 
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
@@ -14,14 +16,9 @@ void refresh();
 
 int main(int argc, char* argv[]) {
 
-    if (!init()) {
-        return 1;
-    }
-    SDL_Surface* pngSurface = nullptr;
-    pngSurface = IMG_Load("../character_hurt.png");
-    if (pngSurface == nullptr) {
-        return 1;
-    }
+    inferno::graphics::Display disp(640,480);
+
+    inferno::graphics::TextureHandle h1 = std::make_shared<inferno::graphics::Texture>(disp.GetRenderer(),"../character_hurt.png","charhurt");
 
     SDL_Event ev;
     bool running = true;
@@ -31,40 +28,13 @@ int main(int argc, char* argv[]) {
                 running = false;
             }
         }
-        SDL_FillRect(screenSurface,NULL,SDL_MapRGB(screenSurface->format, 0x00, 0x00, 0x00));
-        refresh();
-        SDL_BlitSurface(pngSurface, NULL, screenSurface, NULL);
-        refresh();
+        disp.Clear();
+        disp.Refresh();
+        SDL_Delay(200);
+        SDL_RenderCopy(disp.GetRenderer(), h1->GetTexture(), h1->GetQuad().GetRect(), NULL);
+        disp.Refresh();
+        SDL_Delay(200);
     }
 
-    SDL_FreeSurface(pngSurface);
-    close();
     return 0;
-}
-
-bool init() {
-    if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
-        std::cerr << "SDL could not initialize. " << SDL_GetError() << std::endl;
-        return false;
-    }
-
-    window = SDL_CreateWindow("SDL Tutorial", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
-
-    if (window == nullptr) {
-        std::cerr << "Window could not be opened." << SDL_GetError() << std::endl;
-        return false;
-    }
-
-    screenSurface = SDL_GetWindowSurface(window);
-    return true;
-}
-
-void refresh() {
-    SDL_UpdateWindowSurface(window);
-    SDL_Delay(200);
-}
-
-void close() {
-    SDL_DestroyWindow(window);
-    SDL_Quit();
 }

@@ -185,9 +185,6 @@ SDL2Test_BINARY_DIR:STATIC=/Users/Eon/Development/GameDev/Inferno/build
 //Value Computed by CMake
 SDL2Test_SOURCE_DIR:STATIC=/Users/Eon/Development/GameDev/Inferno
 
-//The directory containing a CMake configuration file for SDL2.
-SDL2_DIR:PATH=SDL2_DIR-NOTFOUND
-
 //Path to a library.
 SDL2_I:FILEPATH=/Library/Frameworks/SDL2_IMAGE.framework
 
