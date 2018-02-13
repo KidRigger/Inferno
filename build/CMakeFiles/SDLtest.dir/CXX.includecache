@@ -14,7 +14,7 @@ SDL2_image/SDL_image.h
 iostream
 -
 
-/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Rectangle.hpp
+/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Quad.hpp
 Eigen/Core
 -
 SDL2/SDL.h
@@ -33,8 +33,8 @@ SDL2/SDL.h
 -
 SDL2_image/SDL_image.h
 -
-Rectangle.hpp
-/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Rectangle.hpp
+Quad.hpp
+/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Quad.hpp
 memory
 -
 

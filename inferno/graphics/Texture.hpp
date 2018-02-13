@@ -12,7 +12,7 @@
 #include <string>
 #include <SDL2/SDL.h>
 #include <SDL2_image/SDL_image.h>
-#include "Rectangle.hpp"
+#include "Quad.hpp"
 #include <memory>
 
 namespace inferno {
