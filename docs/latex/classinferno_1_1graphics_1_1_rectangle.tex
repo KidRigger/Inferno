@@ -1,14 +1,23 @@
 \hypertarget{classinferno_1_1graphics_1_1_rectangle}{}\section{inferno\+:\+:graphics\+:\+:Rectangle Class Reference}
 \label{classinferno_1_1graphics_1_1_rectangle}\index{inferno\+::graphics\+::\+Rectangle@{inferno\+::graphics\+::\+Rectangle}}
+
+
+Holds information about a rectangle.  
+
+
+
+
+{\ttfamily \#include $<$Rectangle.\+hpp$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classinferno_1_1graphics_1_1_rectangle_a6abc478421b60e8549d44a2640aba2e8}\label{classinferno_1_1graphics_1_1_rectangle_a6abc478421b60e8549d44a2640aba2e8}} 
-{\bfseries Rectangle} (int x, int y, int w, int h)
-\item 
-\mbox{\Hypertarget{classinferno_1_1graphics_1_1_rectangle_a814df936f602eadf641dc5ac323b6408}\label{classinferno_1_1graphics_1_1_rectangle_a814df936f602eadf641dc5ac323b6408}} 
-{\bfseries Rectangle} (Vector2 dimensions)
-\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_rectangle_ab60df3580f0cc0fd5a24bd8ec5783933}{Rectangle}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor, all zero Constructs a \mbox{\hyperlink{classinferno_1_1graphics_1_1_rectangle}{Rectangle}} with at origin with 0 area. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_rectangle_a6abc478421b60e8549d44a2640aba2e8}{Rectangle}} (int x, int y, int w, int h)
+\begin{DoxyCompactList}\small\item\em Full Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_rectangle_a814df936f602eadf641dc5ac323b6408}{Rectangle}} (Vector2 dimensions)
+\begin{DoxyCompactList}\small\item\em Special Span Constructor. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classinferno_1_1graphics_1_1_rectangle_a86d6d0d63fc14106594210473037255a}\label{classinferno_1_1graphics_1_1_rectangle_a86d6d0d63fc14106594210473037255a}} 
 {\bfseries Rectangle} (Vector2 position, Vector2 dimensions)
 \item 
@@ -46,6 +55,55 @@ int \& {\bfseries w} (void)
 int \& {\bfseries h} (void)
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Holds information about a rectangle. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_rectangle_ab60df3580f0cc0fd5a24bd8ec5783933}\label{classinferno_1_1graphics_1_1_rectangle_ab60df3580f0cc0fd5a24bd8ec5783933}} 
+\index{inferno\+::graphics\+::\+Rectangle@{inferno\+::graphics\+::\+Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!inferno\+::graphics\+::\+Rectangle@{inferno\+::graphics\+::\+Rectangle}}
+\subsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor, all zero Constructs a \mbox{\hyperlink{classinferno_1_1graphics_1_1_rectangle}{Rectangle}} with at origin with 0 area. 
+
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_rectangle_a6abc478421b60e8549d44a2640aba2e8}\label{classinferno_1_1graphics_1_1_rectangle_a6abc478421b60e8549d44a2640aba2e8}} 
+\index{inferno\+::graphics\+::\+Rectangle@{inferno\+::graphics\+::\+Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!inferno\+::graphics\+::\+Rectangle@{inferno\+::graphics\+::\+Rectangle}}
+\subsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Full Constructor. 
+
+Constructs a rectangle completely. 
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate of the rectangle. \\
+\hline
+{\em y} & The y coordinate of the rectangle. \\
+\hline
+{\em w} & The w width of the rectangle. \\
+\hline
+{\em h} & The h height of the rectangle. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_rectangle_a814df936f602eadf641dc5ac323b6408}\label{classinferno_1_1graphics_1_1_rectangle_a814df936f602eadf641dc5ac323b6408}} 
+\index{inferno\+::graphics\+::\+Rectangle@{inferno\+::graphics\+::\+Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!inferno\+::graphics\+::\+Rectangle@{inferno\+::graphics\+::\+Rectangle}}
+\subsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}\item[{Vector2}]{dimensions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Special Span Constructor. 
+
+Takes in the span of the rectangle to construct a rectangle at origin with given span. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inferno',['inferno',['../namespaceinferno.html',1,'']]]
+  ['graphics',['graphics',['../namespacegraphics.html',1,'']]]
 ];

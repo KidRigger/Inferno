@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceinferno.html">inferno</a></li><li class="navelem"><b>graphics</b></li><li class="navelem"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a></li>  </ul>
+<li class="navelem"><b>inferno</b></li><li class="navelem"><b>graphics</b></li><li class="navelem"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -73,43 +73,411 @@ $(function() {
 <div class="title">inferno::graphics::TextureManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Manager class that loads and stores Textures for ease of access.  
+ <a href="classinferno_1_1graphics_1_1_texture_manager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_texture_manager_8hpp_source.html">TextureManager.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a06e141712b3786bae5100da3e04aff92"><td class="memItemLeft" align="right" valign="top"><a id="a06e141712b3786bae5100da3e04aff92"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TextureManager</b> (SDL_Renderer *renderTarget)</td></tr>
+<tr class="memitem:a06e141712b3786bae5100da3e04aff92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html#a06e141712b3786bae5100da3e04aff92">TextureManager</a> (SDL_Renderer *renderTarget)</td></tr>
+<tr class="memdesc:a06e141712b3786bae5100da3e04aff92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimal constructor.  <a href="#a06e141712b3786bae5100da3e04aff92">More...</a><br /></td></tr>
 <tr class="separator:a06e141712b3786bae5100da3e04aff92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6d374761b5535d511a9b89259d62f33"><td class="memItemLeft" align="right" valign="top"><a id="ab6d374761b5535d511a9b89259d62f33"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TextureManager</b> (const <a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a> &amp;texture_manager)=default</td></tr>
-<tr class="separator:ab6d374761b5535d511a9b89259d62f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a504d68f0a53e92bd3c23ad2c544e0964"><td class="memItemLeft" align="right" valign="top"><a id="a504d68f0a53e92bd3c23ad2c544e0964"></a>
-<a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a> &amp;texture_manger)=default</td></tr>
-<tr class="separator:a504d68f0a53e92bd3c23ad2c544e0964"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91ac9443d92df72ecedee3cf16401965"><td class="memItemLeft" align="right" valign="top"><a id="a91ac9443d92df72ecedee3cf16401965"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TextureManager</b> (<a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a> &amp;&amp;texture_manager)</td></tr>
+<tr class="memitem:a6aaf05d68384081740e7b59752f5ea86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html#a6aaf05d68384081740e7b59752f5ea86">TextureManager</a> (const <a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a> &amp;texture_manager)=delete</td></tr>
+<tr class="memdesc:a6aaf05d68384081740e7b59752f5ea86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy construction disabled.  <a href="#a6aaf05d68384081740e7b59752f5ea86">More...</a><br /></td></tr>
+<tr class="separator:a6aaf05d68384081740e7b59752f5ea86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328ab24dd273a41437c23abafbf978c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html#a328ab24dd273a41437c23abafbf978c0">operator=</a> (const <a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a> &amp;texture_manger)=delete</td></tr>
+<tr class="memdesc:a328ab24dd273a41437c23abafbf978c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment disabled.  <a href="#a328ab24dd273a41437c23abafbf978c0">More...</a><br /></td></tr>
+<tr class="separator:a328ab24dd273a41437c23abafbf978c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ac9443d92df72ecedee3cf16401965"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html#a91ac9443d92df72ecedee3cf16401965">TextureManager</a> (<a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a> &amp;&amp;texture_manager)</td></tr>
+<tr class="memdesc:a91ac9443d92df72ecedee3cf16401965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="#a91ac9443d92df72ecedee3cf16401965">More...</a><br /></td></tr>
 <tr class="separator:a91ac9443d92df72ecedee3cf16401965"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac413011a070590a960995b21eb4e3fdb"><td class="memItemLeft" align="right" valign="top"><a id="ac413011a070590a960995b21eb4e3fdb"></a>
-<a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a> &amp;&amp;texture_manager)</td></tr>
+<tr class="memitem:ac413011a070590a960995b21eb4e3fdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html#ac413011a070590a960995b21eb4e3fdb">operator=</a> (<a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a> &amp;&amp;texture_manager)</td></tr>
+<tr class="memdesc:ac413011a070590a960995b21eb4e3fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment Moves the existing texture_manager into this texture_manager and destroys the original.  <a href="#ac413011a070590a960995b21eb4e3fdb">More...</a><br /></td></tr>
 <tr class="separator:ac413011a070590a960995b21eb4e3fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8a3d242633cc83fd3fe178520d15cb6"><td class="memItemLeft" align="right" valign="top"><a id="aa8a3d242633cc83fd3fe178520d15cb6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> (std::string texture_filename, std::string texture_name)</td></tr>
+<tr class="memitem:aa8a3d242633cc83fd3fe178520d15cb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html#aa8a3d242633cc83fd3fe178520d15cb6">Load</a> (std::string texture_filename, std::string texture_name)</td></tr>
+<tr class="memdesc:aa8a3d242633cc83fd3fe178520d15cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a texture.  <a href="#aa8a3d242633cc83fd3fe178520d15cb6">More...</a><br /></td></tr>
 <tr class="separator:aa8a3d242633cc83fd3fe178520d15cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1c0a268b96073bb0c925e3523f2bc58"><td class="memItemLeft" align="right" valign="top"><a id="ae1c0a268b96073bb0c925e3523f2bc58"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadAll</b> (std::vector&lt; std::string &gt; texture_filenames, std::vector&lt; std::string &gt; texture_names)</td></tr>
+<tr class="memitem:ae1c0a268b96073bb0c925e3523f2bc58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html#ae1c0a268b96073bb0c925e3523f2bc58">LoadAll</a> (std::vector&lt; std::string &gt; texture_filenames, std::vector&lt; std::string &gt; texture_names)</td></tr>
+<tr class="memdesc:ae1c0a268b96073bb0c925e3523f2bc58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads multiple textures together.  <a href="#ae1c0a268b96073bb0c925e3523f2bc58">More...</a><br /></td></tr>
 <tr class="separator:ae1c0a268b96073bb0c925e3523f2bc58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af860bd092645a0c99afa35d3e978f3d8"><td class="memItemLeft" align="right" valign="top"><a id="af860bd092645a0c99afa35d3e978f3d8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Unload</b> (std::string texture_name)</td></tr>
+<tr class="memitem:af860bd092645a0c99afa35d3e978f3d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html#af860bd092645a0c99afa35d3e978f3d8">Unload</a> (std::string texture_name)</td></tr>
+<tr class="memdesc:af860bd092645a0c99afa35d3e978f3d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unloads the texture.  <a href="#af860bd092645a0c99afa35d3e978f3d8">More...</a><br /></td></tr>
 <tr class="separator:af860bd092645a0c99afa35d3e978f3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3f3fbf66a7c133ed129e1433b1c7cee"><td class="memItemLeft" align="right" valign="top"><a id="ab3f3fbf66a7c133ed129e1433b1c7cee"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UnloadAll</b> ()</td></tr>
+<tr class="memitem:ab3f3fbf66a7c133ed129e1433b1c7cee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html#ab3f3fbf66a7c133ed129e1433b1c7cee">UnloadAll</a> ()</td></tr>
+<tr class="memdesc:ab3f3fbf66a7c133ed129e1433b1c7cee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unloads all textures.  <a href="#ab3f3fbf66a7c133ed129e1433b1c7cee">More...</a><br /></td></tr>
 <tr class="separator:ab3f3fbf66a7c133ed129e1433b1c7cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2b18c9725addce31e35034ea6642fbf"><td class="memItemLeft" align="right" valign="top"><a id="ae2b18c9725addce31e35034ea6642fbf"></a>
-inferno::graphics::TextureHandle&#160;</td><td class="memItemRight" valign="bottom"><b>Get</b> (std::string texture_name) const</td></tr>
+<tr class="memitem:a7b5b7ee8f6c1a65f63de017a933549ef"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html#a7b5b7ee8f6c1a65f63de017a933549ef">size</a> ()</td></tr>
+<tr class="memdesc:a7b5b7ee8f6c1a65f63de017a933549ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of textures stored.  <a href="#a7b5b7ee8f6c1a65f63de017a933549ef">More...</a><br /></td></tr>
+<tr class="separator:a7b5b7ee8f6c1a65f63de017a933549ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2b18c9725addce31e35034ea6642fbf"><td class="memItemLeft" align="right" valign="top">inferno::graphics::TextureHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html#ae2b18c9725addce31e35034ea6642fbf">Get</a> (std::string texture_name) const</td></tr>
+<tr class="memdesc:ae2b18c9725addce31e35034ea6642fbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the required texture.  <a href="#ae2b18c9725addce31e35034ea6642fbf">More...</a><br /></td></tr>
 <tr class="separator:ae2b18c9725addce31e35034ea6642fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a419b62740d0cbff686820b9b4ccc95e2"><td class="memItemLeft" align="right" valign="top"><a id="a419b62740d0cbff686820b9b4ccc95e2"></a>
-inferno::graphics::TextureHandle&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (std::string texture_name) const</td></tr>
+<tr class="memitem:a419b62740d0cbff686820b9b4ccc95e2"><td class="memItemLeft" align="right" valign="top">inferno::graphics::TextureHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html#a419b62740d0cbff686820b9b4ccc95e2">operator[]</a> (std::string texture_name) const</td></tr>
+<tr class="memdesc:a419b62740d0cbff686820b9b4ccc95e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the required texture.  <a href="#a419b62740d0cbff686820b9b4ccc95e2">More...</a><br /></td></tr>
 <tr class="separator:a419b62740d0cbff686820b9b4ccc95e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c136bc37abea48c23ed8f6c863b63f"><td class="memItemLeft" align="right" valign="top"><a id="a41c136bc37abea48c23ed8f6c863b63f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html#a41c136bc37abea48c23ed8f6c863b63f">~TextureManager</a> ()</td></tr>
+<tr class="memdesc:a41c136bc37abea48c23ed8f6c863b63f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:a41c136bc37abea48c23ed8f6c863b63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p class="">Manager class that loads and stores Textures for ease of access. </p>
+<p class="">Stores the textures into a map which allows easy access using the string ids using hashes. And stores the filename in a map to prevent reloading existing textures. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a06e141712b3786bae5100da3e04aff92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06e141712b3786bae5100da3e04aff92">&#9670;&nbsp;</a></span>TextureManager() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">inferno::graphics::TextureManager::TextureManager </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Renderer *&#160;</td>
+          <td class="paramname"><em>renderTarget</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Minimal constructor. </p>
+<p class="">Takes the SDL_Renderer of the render target (display) at construction to use for constructing the textures. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderTarget</td><td>SDL_Renderer from the display window. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6aaf05d68384081740e7b59752f5ea86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aaf05d68384081740e7b59752f5ea86">&#9670;&nbsp;</a></span>TextureManager() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">inferno::graphics::TextureManager::TextureManager </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture_manager</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy construction disabled. </p>
+<p class="">Only need one <a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html" title="Manager class that loads and stores Textures for ease of access. ">TextureManager</a> at a time. So disabling copy to ensure copies of the manager don't exist. </p>
+
+</div>
+</div>
+<a id="a91ac9443d92df72ecedee3cf16401965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ac9443d92df72ecedee3cf16401965">&#9670;&nbsp;</a></span>TextureManager() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">inferno::graphics::TextureManager::TextureManager </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>texture_manager</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move constructor. </p>
+<p class="">Moves the existing texture_manager into the new texture_manager and destroys the original. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture_manager</td><td>the texture manager to be moved in. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae2b18c9725addce31e35034ea6642fbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2b18c9725addce31e35034ea6642fbf">&#9670;&nbsp;</a></span>Get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">inferno::graphics::TextureHandle inferno::graphics::TextureManager::Get </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>texture_name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the required texture. </p>
+<p class="">Looks up in for the TextureHandle corresponding to the texture_name stored in the file. </p><dl class="section return"><dt>Returns</dt><dd>TextureHandle referencing the called for texture. </dd></dl>
+
+</div>
+</div>
+<a id="aa8a3d242633cc83fd3fe178520d15cb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8a3d242633cc83fd3fe178520d15cb6">&#9670;&nbsp;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void inferno::graphics::TextureManager::Load </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>texture_filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>texture_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads a texture. </p>
+<p class="">Loads a texture from the given <em>texture_filename</em> and allows reaccess using the <em>texture_name</em> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture_filename</td><td>The path to file containing the texture. </td></tr>
+    <tr><td class="paramname">texture_name</td><td>The unique identifier for the texture to recall the loaded texture. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae1c0a268b96073bb0c925e3523f2bc58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1c0a268b96073bb0c925e3523f2bc58">&#9670;&nbsp;</a></span>LoadAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void inferno::graphics::TextureManager::LoadAll </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>texture_filenames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>texture_names</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads multiple textures together. </p>
+<p class="">Loads the Textures from the filesnames and saves with the corresponding IDs. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture_filenames</td><td>The vector containing the paths for each texture. </td></tr>
+    <tr><td class="paramname">texture_names</td><td>The IDs by which to store the textures. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a328ab24dd273a41437c23abafbf978c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a328ab24dd273a41437c23abafbf978c0">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a>&amp; inferno::graphics::TextureManager::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture_manger</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy assignment disabled. </p>
+<p class="">Only need one <a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html" title="Manager class that loads and stores Textures for ease of access. ">TextureManager</a> at a time. So disabling copy to ensure copies of the manager don't exist. </p>
+
+</div>
+</div>
+<a id="ac413011a070590a960995b21eb4e3fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac413011a070590a960995b21eb4e3fdb">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a>&amp; inferno::graphics::TextureManager::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classinferno_1_1graphics_1_1_texture_manager.html">TextureManager</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>texture_manager</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move assignment Moves the existing texture_manager into this texture_manager and destroys the original. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture_manager</td><td>the texture manager to be moved in. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a419b62740d0cbff686820b9b4ccc95e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a419b62740d0cbff686820b9b4ccc95e2">&#9670;&nbsp;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">inferno::graphics::TextureHandle inferno::graphics::TextureManager::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>texture_name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the required texture. </p>
+<p class="">Looks up in for the TextureHandle corresponding to the texture_name stored in the file. </p><dl class="section return"><dt>Returns</dt><dd>TextureHandle referencing the called for texture. </dd></dl>
+
+</div>
+</div>
+<a id="a7b5b7ee8f6c1a65f63de017a933549ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b5b7ee8f6c1a65f63de017a933549ef">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t inferno::graphics::TextureManager::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the number of textures stored. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of textures stored in the class. </dd></dl>
+
+</div>
+</div>
+<a id="af860bd092645a0c99afa35d3e978f3d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af860bd092645a0c99afa35d3e978f3d8">&#9670;&nbsp;</a></span>Unload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void inferno::graphics::TextureManager::Unload </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>texture_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unloads the texture. </p>
+<p class="">Unloads the texture specified by the given texture_name on call. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture_name</td><td>String containing the ID of the texture to unload. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab3f3fbf66a7c133ed129e1433b1c7cee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f3fbf66a7c133ed129e1433b1c7cee">&#9670;&nbsp;</a></span>UnloadAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void inferno::graphics::TextureManager::UnloadAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unloads all textures. </p>
+<p class="">Unloads all the textures so no texture remains. <br />
+Simply clears out the map. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>inferno/graphics/<a class="el" href="_texture_manager_8hpp_source.html">TextureManager.hpp</a></li>
 <li>inferno/graphics/TextureManager.cpp</li>

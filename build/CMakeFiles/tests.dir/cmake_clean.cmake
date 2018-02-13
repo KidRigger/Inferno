@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/tests.dir/tests/catch_main.cpp.o"
   "CMakeFiles/tests.dir/tests/textureload.cpp.o"
   "CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.o"
-  "CMakeFiles/tests.dir/inferno/graphics/Sprite.cpp.o"
   "CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.o"
   "tests.pdb"
   "tests"

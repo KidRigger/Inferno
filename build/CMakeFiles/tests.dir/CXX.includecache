@@ -20,14 +20,6 @@ Eigen/Core
 SDL2/SDL.h
 -
 
-/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Sprite.cpp
-Sprite.hpp
-/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Sprite.hpp
-
-/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Sprite.hpp
-Texture.hpp
-/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Texture.hpp
-
 /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Texture.cpp
 Texture.hpp
 /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Texture.hpp

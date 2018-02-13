@@ -10,9 +10,11 @@ TEST_CASE ( "Textures are loaded" , "[texture_load]" ) {
     SECTION ( "Hashes are correct " ) {
         REQUIRE( tex.GetHash() == std::hash<std::string>{}(id) );
     }
-    SECTION ( "Texture sizes are correct " ) {
+    SECTION ( "Texture position is correct " ) {
         REQUIRE( tex.GetQuad().x() == 0 );
         REQUIRE( tex.GetQuad().y() == 0 );
+    }
+    SECTION ( "Texture size is correct" ) {
         REQUIRE( tex.GetQuad().w() == 40 );
         REQUIRE( tex.GetQuad().h() == 40 );
     }

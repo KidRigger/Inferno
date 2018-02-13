@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
 # Target rules for targets named SDLtest
 
 # Build rule for target.
@@ -123,39 +136,13 @@ SDLtest/fast:
 	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/build
 .PHONY : SDLtest/fast
 
-inferno/graphics/Sprite.o: inferno/graphics/Sprite.cpp.o
-
-.PHONY : inferno/graphics/Sprite.o
-
-# target to build an object file
-inferno/graphics/Sprite.cpp.o:
-	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.o
-.PHONY : inferno/graphics/Sprite.cpp.o
-
-inferno/graphics/Sprite.i: inferno/graphics/Sprite.cpp.i
-
-.PHONY : inferno/graphics/Sprite.i
-
-# target to preprocess a source file
-inferno/graphics/Sprite.cpp.i:
-	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.i
-.PHONY : inferno/graphics/Sprite.cpp.i
-
-inferno/graphics/Sprite.s: inferno/graphics/Sprite.cpp.s
-
-.PHONY : inferno/graphics/Sprite.s
-
-# target to generate assembly for a file
-inferno/graphics/Sprite.cpp.s:
-	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/Sprite.cpp.s
-.PHONY : inferno/graphics/Sprite.cpp.s
-
 inferno/graphics/Texture.o: inferno/graphics/Texture.cpp.o
 
 .PHONY : inferno/graphics/Texture.o
 
 # target to build an object file
 inferno/graphics/Texture.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.o
 	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/Texture.cpp.o
 .PHONY : inferno/graphics/Texture.cpp.o
 
@@ -165,6 +152,7 @@ inferno/graphics/Texture.i: inferno/graphics/Texture.cpp.i
 
 # target to preprocess a source file
 inferno/graphics/Texture.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.i
 	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/Texture.cpp.i
 .PHONY : inferno/graphics/Texture.cpp.i
 
@@ -174,6 +162,7 @@ inferno/graphics/Texture.s: inferno/graphics/Texture.cpp.s
 
 # target to generate assembly for a file
 inferno/graphics/Texture.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.s
 	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/Texture.cpp.s
 .PHONY : inferno/graphics/Texture.cpp.s
 
@@ -183,6 +172,7 @@ inferno/graphics/TextureManager.o: inferno/graphics/TextureManager.cpp.o
 
 # target to build an object file
 inferno/graphics/TextureManager.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.o
 	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o
 .PHONY : inferno/graphics/TextureManager.cpp.o
 
@@ -192,6 +182,7 @@ inferno/graphics/TextureManager.i: inferno/graphics/TextureManager.cpp.i
 
 # target to preprocess a source file
 inferno/graphics/TextureManager.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.i
 	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.i
 .PHONY : inferno/graphics/TextureManager.cpp.i
 
@@ -201,6 +192,7 @@ inferno/graphics/TextureManager.s: inferno/graphics/TextureManager.cpp.s
 
 # target to generate assembly for a file
 inferno/graphics/TextureManager.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.s
 	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.s
 .PHONY : inferno/graphics/TextureManager.cpp.s
 
@@ -231,6 +223,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+tests/catch_main.o: tests/catch_main.cpp.o
+
+.PHONY : tests/catch_main.o
+
+# target to build an object file
+tests/catch_main.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/catch_main.cpp.o
+.PHONY : tests/catch_main.cpp.o
+
+tests/catch_main.i: tests/catch_main.cpp.i
+
+.PHONY : tests/catch_main.i
+
+# target to preprocess a source file
+tests/catch_main.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/catch_main.cpp.i
+.PHONY : tests/catch_main.cpp.i
+
+tests/catch_main.s: tests/catch_main.cpp.s
+
+.PHONY : tests/catch_main.s
+
+# target to generate assembly for a file
+tests/catch_main.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/catch_main.cpp.s
+.PHONY : tests/catch_main.cpp.s
+
+tests/textureload.o: tests/textureload.cpp.o
+
+.PHONY : tests/textureload.o
+
+# target to build an object file
+tests/textureload.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/textureload.cpp.o
+.PHONY : tests/textureload.cpp.o
+
+tests/textureload.i: tests/textureload.cpp.i
+
+.PHONY : tests/textureload.i
+
+# target to preprocess a source file
+tests/textureload.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/textureload.cpp.i
+.PHONY : tests/textureload.cpp.i
+
+tests/textureload.s: tests/textureload.cpp.s
+
+.PHONY : tests/textureload.s
+
+# target to generate assembly for a file
+tests/textureload.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/textureload.cpp.s
+.PHONY : tests/textureload.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -239,10 +285,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... tests"
 	@echo "... SDLtest"
-	@echo "... inferno/graphics/Sprite.o"
-	@echo "... inferno/graphics/Sprite.i"
-	@echo "... inferno/graphics/Sprite.s"
 	@echo "... inferno/graphics/Texture.o"
 	@echo "... inferno/graphics/Texture.i"
 	@echo "... inferno/graphics/Texture.s"
@@ -252,6 +296,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... tests/catch_main.o"
+	@echo "... tests/catch_main.i"
+	@echo "... tests/catch_main.s"
+	@echo "... tests/textureload.o"
+	@echo "... tests/textureload.i"
+	@echo "... tests/textureload.s"
 .PHONY : help
 
 

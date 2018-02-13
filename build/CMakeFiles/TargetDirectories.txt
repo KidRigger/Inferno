@@ -1,3 +1,4 @@
 /Users/Eon/Development/GameDev/Inferno/build/CMakeFiles/rebuild_cache.dir
 /Users/Eon/Development/GameDev/Inferno/build/CMakeFiles/edit_cache.dir
+/Users/Eon/Development/GameDev/Inferno/build/CMakeFiles/tests.dir
 /Users/Eon/Development/GameDev/Inferno/build/CMakeFiles/SDLtest.dir

@@ -17,9 +17,12 @@
 
 namespace inferno {
     namespace graphics {
+        /// @class Texture
         /// @brief RAII Class for SDL_Textures.
         /// Texture is used to automatically deallocate and ease of transfer
         /// in files without the allocation responsibilities.
+        /// Only a container. Use Sprite for drawing.
+        /// @see Sprite
         class Texture {
         public:
             /// @brief Constructor for the Texture class.
@@ -71,8 +74,8 @@ namespace inferno {
 
             /// @brief Get a raw pointer to the bitmap.
             /// Facilitates the getting of the raw pointer from the class for
-            /// interfacing with the rest of SDL functions.
-            /// \n Do not delete the raw pointer. The responsibility lies with This
+            /// interfacing with the rest of SDL functions. \n
+            /// Do not delete the raw pointer. The responsibility lies with This
             /// class only.
             /// @returns SDL_Texture pointer to the stored texture.
             SDL_Texture* GetTexture() const { return texture_bitmap; };
@@ -86,6 +89,8 @@ namespace inferno {
             Quad size;
         };
 
+        /// @typedef std::shared_ptr<Texture> TextureHandle;
+        /// TextureHandle just rename of shared_ptr<Texture> for convenience.
         typedef std::shared_ptr<Texture> TextureHandle;
     }
 }

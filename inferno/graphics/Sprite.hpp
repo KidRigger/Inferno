@@ -14,26 +14,35 @@
 namespace inferno {
     namespace graphics {
 
-        // class Sprite
-        // Just holds together a texture handle and the region mapping
-        // To take one specific sprite out of a spritemap.
+        /// @brief Hold a texture and required region.
+        /// A pair like structure to make a small pieced images from the
+        /// texture atlas that it holds a reference to (shared_ptr). \n
+        /// Primary image datatype.
         class Sprite {
 
         public:
-            // Simple ctor
+            /// Simple Constructor. Initializes the texture and region according to the parameters.
+            /// @param texture_handle TextureHandle referencing to the atlas the sprite is a part of.
+            /// @param region Quad containing the details of the region to be used.
             Sprite(TextureHandle texture_handle, Quad region):
             txr(texture_handle),region(region) {}
 
-            // Full texture as sprite
+            /// Constructor without region argument.
+            /// The constructor automatically selects the entire image as a region
+            /// for the construction.
+            /// @param texture_handle TextureHandle referencing to the atlas the sprite is a part of.
             Sprite(TextureHandle texture_handle):
             txr(texture_handle), region(texture_handle->GetQuad()) {}
-            // Default ctor
+
+            /// Default Constructor
             Sprite() = default;
 
-            // Gets TextureHandle
+            /// Gets the atlas
+            /// @returns TextureHandle to the texture atlas used by the sprite.
             TextureHandle GetTexture() { return txr; }
 
-            // Gets the region
+            /// Gets the region
+            /// @returns Quad containing the source region mapped by the sprite.
             Quad GetRegion() { return region; }
 
         private:

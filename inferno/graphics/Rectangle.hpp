@@ -16,20 +16,27 @@ typedef Eigen::Vector2f Vector2;
 namespace inferno {
     namespace graphics {
 
-        // Rectangle class
-        // Holds information about a rectangle.
+        /// @class Rectangle
+        /// Holds information about a rectangle.
         class Rectangle {
         public:
-            // Default constructor, all zero
+
+            /// Default constructor, all zero
+            /// Constructs a Rectangle with at origin with 0 area.
             Rectangle(): rect{0,0,0,0} {}
 
-            // Actual constructor
+            /// Full Constructor.
+            /// Constructs a rectangle completely.
+            /// @param x The x coordinate of the rectangle.
+            /// @param y The y coordinate of the rectangle.
+            /// @param w The w width of the rectangle.
+            /// @param h The h height of the rectangle.
             Rectangle(int x, int y, int w, int h):
             rect{x,y,w,h} {}
 
-            // Special Span Constructor
-            // Takes in the span of the rectangle to construct a
-            // rectangle at origin with given span.
+            /// Special Span Constructor.
+            /// Takes in the span of the rectangle to construct a
+            /// rectangle at origin with given span.
             Rectangle(Vector2 dimensions): rect{0,0,(int)dimensions.x(),(int)dimensions.y()} {}
 
             // Component Constructor.

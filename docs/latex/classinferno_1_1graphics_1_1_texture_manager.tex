@@ -1,42 +1,220 @@
 \hypertarget{classinferno_1_1graphics_1_1_texture_manager}{}\section{inferno\+:\+:graphics\+:\+:Texture\+Manager Class Reference}
 \label{classinferno_1_1graphics_1_1_texture_manager}\index{inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}}
+
+
+Manager class that loads and stores Textures for ease of access.  
+
+
+
+
+{\ttfamily \#include $<$Texture\+Manager.\+hpp$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_a06e141712b3786bae5100da3e04aff92}\label{classinferno_1_1graphics_1_1_texture_manager_a06e141712b3786bae5100da3e04aff92}} 
-{\bfseries Texture\+Manager} (S\+D\+L\+\_\+\+Renderer $\ast$render\+Target)
-\item 
-\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_ab6d374761b5535d511a9b89259d62f33}\label{classinferno_1_1graphics_1_1_texture_manager_ab6d374761b5535d511a9b89259d62f33}} 
-{\bfseries Texture\+Manager} (const \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} \&texture\+\_\+manager)=default
-\item 
-\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_a504d68f0a53e92bd3c23ad2c544e0964}\label{classinferno_1_1graphics_1_1_texture_manager_a504d68f0a53e92bd3c23ad2c544e0964}} 
-\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} \& {\bfseries operator=} (const \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} \&texture\+\_\+manger)=default
-\item 
-\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_a91ac9443d92df72ecedee3cf16401965}\label{classinferno_1_1graphics_1_1_texture_manager_a91ac9443d92df72ecedee3cf16401965}} 
-{\bfseries Texture\+Manager} (\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} \&\&texture\+\_\+manager)
-\item 
-\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_ac413011a070590a960995b21eb4e3fdb}\label{classinferno_1_1graphics_1_1_texture_manager_ac413011a070590a960995b21eb4e3fdb}} 
-\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} \& {\bfseries operator=} (\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} \&\&texture\+\_\+manager)
-\item 
-\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_aa8a3d242633cc83fd3fe178520d15cb6}\label{classinferno_1_1graphics_1_1_texture_manager_aa8a3d242633cc83fd3fe178520d15cb6}} 
-void {\bfseries Load} (std\+::string texture\+\_\+filename, std\+::string texture\+\_\+name)
-\item 
-\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_ae1c0a268b96073bb0c925e3523f2bc58}\label{classinferno_1_1graphics_1_1_texture_manager_ae1c0a268b96073bb0c925e3523f2bc58}} 
-void {\bfseries Load\+All} (std\+::vector$<$ std\+::string $>$ texture\+\_\+filenames, std\+::vector$<$ std\+::string $>$ texture\+\_\+names)
-\item 
-\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_af860bd092645a0c99afa35d3e978f3d8}\label{classinferno_1_1graphics_1_1_texture_manager_af860bd092645a0c99afa35d3e978f3d8}} 
-void {\bfseries Unload} (std\+::string texture\+\_\+name)
-\item 
-\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_ab3f3fbf66a7c133ed129e1433b1c7cee}\label{classinferno_1_1graphics_1_1_texture_manager_ab3f3fbf66a7c133ed129e1433b1c7cee}} 
-void {\bfseries Unload\+All} ()
-\item 
-\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_ae2b18c9725addce31e35034ea6642fbf}\label{classinferno_1_1graphics_1_1_texture_manager_ae2b18c9725addce31e35034ea6642fbf}} 
-inferno\+::graphics\+::\+Texture\+Handle {\bfseries Get} (std\+::string texture\+\_\+name) const
-\item 
-\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_a419b62740d0cbff686820b9b4ccc95e2}\label{classinferno_1_1graphics_1_1_texture_manager_a419b62740d0cbff686820b9b4ccc95e2}} 
-inferno\+::graphics\+::\+Texture\+Handle {\bfseries operator\mbox{[}$\,$\mbox{]}} (std\+::string texture\+\_\+name) const
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager_a06e141712b3786bae5100da3e04aff92}{Texture\+Manager}} (S\+D\+L\+\_\+\+Renderer $\ast$render\+Target)
+\begin{DoxyCompactList}\small\item\em Minimal constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager_a6aaf05d68384081740e7b59752f5ea86}{Texture\+Manager}} (const \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} \&texture\+\_\+manager)=delete
+\begin{DoxyCompactList}\small\item\em Copy construction disabled. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} \& \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager_a328ab24dd273a41437c23abafbf978c0}{operator=}} (const \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} \&texture\+\_\+manger)=delete
+\begin{DoxyCompactList}\small\item\em Copy assignment disabled. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager_a91ac9443d92df72ecedee3cf16401965}{Texture\+Manager}} (\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} \&\&texture\+\_\+manager)
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} \& \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager_ac413011a070590a960995b21eb4e3fdb}{operator=}} (\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} \&\&texture\+\_\+manager)
+\begin{DoxyCompactList}\small\item\em Move assignment Moves the existing texture\+\_\+manager into this texture\+\_\+manager and destroys the original. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager_aa8a3d242633cc83fd3fe178520d15cb6}{Load}} (std\+::string texture\+\_\+filename, std\+::string texture\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Loads a texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager_ae1c0a268b96073bb0c925e3523f2bc58}{Load\+All}} (std\+::vector$<$ std\+::string $>$ texture\+\_\+filenames, std\+::vector$<$ std\+::string $>$ texture\+\_\+names)
+\begin{DoxyCompactList}\small\item\em Loads multiple textures together. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager_af860bd092645a0c99afa35d3e978f3d8}{Unload}} (std\+::string texture\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Unloads the texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager_ab3f3fbf66a7c133ed129e1433b1c7cee}{Unload\+All}} ()
+\begin{DoxyCompactList}\small\item\em Unloads all textures. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager_a7b5b7ee8f6c1a65f63de017a933549ef}{size}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of textures stored. \end{DoxyCompactList}\item 
+inferno\+::graphics\+::\+Texture\+Handle \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager_ae2b18c9725addce31e35034ea6642fbf}{Get}} (std\+::string texture\+\_\+name) const
+\begin{DoxyCompactList}\small\item\em Gets the required texture. \end{DoxyCompactList}\item 
+inferno\+::graphics\+::\+Texture\+Handle \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager_a419b62740d0cbff686820b9b4ccc95e2}{operator\mbox{[}$\,$\mbox{]}}} (std\+::string texture\+\_\+name) const
+\begin{DoxyCompactList}\small\item\em Gets the required texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_a41c136bc37abea48c23ed8f6c863b63f}\label{classinferno_1_1graphics_1_1_texture_manager_a41c136bc37abea48c23ed8f6c863b63f}} 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager_a41c136bc37abea48c23ed8f6c863b63f}{$\sim$\+Texture\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Manager class that loads and stores Textures for ease of access. 
+
+Stores the textures into a map which allows easy access using the string ids using hashes. And stores the filename in a map to prevent reloading existing textures. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_a06e141712b3786bae5100da3e04aff92}\label{classinferno_1_1graphics_1_1_texture_manager_a06e141712b3786bae5100da3e04aff92}} 
+\index{inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}!Texture\+Manager@{Texture\+Manager}}
+\index{Texture\+Manager@{Texture\+Manager}!inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}}
+\subsubsection{\texorpdfstring{Texture\+Manager()}{TextureManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Texture\+Manager\+::\+Texture\+Manager (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{render\+Target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Minimal constructor. 
+
+Takes the S\+D\+L\+\_\+\+Renderer of the render target (display) at construction to use for constructing the textures. 
+\begin{DoxyParams}{Parameters}
+{\em render\+Target} & S\+D\+L\+\_\+\+Renderer from the display window. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_a6aaf05d68384081740e7b59752f5ea86}\label{classinferno_1_1graphics_1_1_texture_manager_a6aaf05d68384081740e7b59752f5ea86}} 
+\index{inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}!Texture\+Manager@{Texture\+Manager}}
+\index{Texture\+Manager@{Texture\+Manager}!inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}}
+\subsubsection{\texorpdfstring{Texture\+Manager()}{TextureManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Texture\+Manager\+::\+Texture\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} \&}]{texture\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy construction disabled. 
+
+Only need one \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} at a time. So disabling copy to ensure copies of the manager don\textquotesingle{}t exist. \mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_a91ac9443d92df72ecedee3cf16401965}\label{classinferno_1_1graphics_1_1_texture_manager_a91ac9443d92df72ecedee3cf16401965}} 
+\index{inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}!Texture\+Manager@{Texture\+Manager}}
+\index{Texture\+Manager@{Texture\+Manager}!inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}}
+\subsubsection{\texorpdfstring{Texture\+Manager()}{TextureManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Texture\+Manager\+::\+Texture\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} \&\&}]{texture\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move constructor. 
+
+Moves the existing texture\+\_\+manager into the new texture\+\_\+manager and destroys the original. 
+\begin{DoxyParams}{Parameters}
+{\em texture\+\_\+manager} & the texture manager to be moved in. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_ae2b18c9725addce31e35034ea6642fbf}\label{classinferno_1_1graphics_1_1_texture_manager_ae2b18c9725addce31e35034ea6642fbf}} 
+\index{inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}!Get@{Get}}
+\index{Get@{Get}!inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Texture\+Handle inferno\+::graphics\+::\+Texture\+Manager\+::\+Get (\begin{DoxyParamCaption}\item[{std\+::string}]{texture\+\_\+name }\end{DoxyParamCaption}) const}
+
+
+
+Gets the required texture. 
+
+Looks up in for the Texture\+Handle corresponding to the texture\+\_\+name stored in the file. \begin{DoxyReturn}{Returns}
+Texture\+Handle referencing the called for texture. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_aa8a3d242633cc83fd3fe178520d15cb6}\label{classinferno_1_1graphics_1_1_texture_manager_aa8a3d242633cc83fd3fe178520d15cb6}} 
+\index{inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}!Load@{Load}}
+\index{Load@{Load}!inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}}
+\subsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void inferno\+::graphics\+::\+Texture\+Manager\+::\+Load (\begin{DoxyParamCaption}\item[{std\+::string}]{texture\+\_\+filename,  }\item[{std\+::string}]{texture\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Loads a texture. 
+
+Loads a texture from the given {\itshape texture\+\_\+filename} and allows reaccess using the {\itshape texture\+\_\+name} 
+\begin{DoxyParams}{Parameters}
+{\em texture\+\_\+filename} & The path to file containing the texture. \\
+\hline
+{\em texture\+\_\+name} & The unique identifier for the texture to recall the loaded texture. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_ae1c0a268b96073bb0c925e3523f2bc58}\label{classinferno_1_1graphics_1_1_texture_manager_ae1c0a268b96073bb0c925e3523f2bc58}} 
+\index{inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}!Load\+All@{Load\+All}}
+\index{Load\+All@{Load\+All}!inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}}
+\subsubsection{\texorpdfstring{Load\+All()}{LoadAll()}}
+{\footnotesize\ttfamily void inferno\+::graphics\+::\+Texture\+Manager\+::\+Load\+All (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{texture\+\_\+filenames,  }\item[{std\+::vector$<$ std\+::string $>$}]{texture\+\_\+names }\end{DoxyParamCaption})}
+
+
+
+Loads multiple textures together. 
+
+Loads the Textures from the filesnames and saves with the corresponding I\+Ds. 
+\begin{DoxyParams}{Parameters}
+{\em texture\+\_\+filenames} & The vector containing the paths for each texture. \\
+\hline
+{\em texture\+\_\+names} & The I\+Ds by which to store the textures. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_a328ab24dd273a41437c23abafbf978c0}\label{classinferno_1_1graphics_1_1_texture_manager_a328ab24dd273a41437c23abafbf978c0}} 
+\index{inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}!operator=@{operator=}}
+\index{operator=@{operator=}!inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}}\& inferno\+::graphics\+::\+Texture\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} \&}]{texture\+\_\+manger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy assignment disabled. 
+
+Only need one \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} at a time. So disabling copy to ensure copies of the manager don\textquotesingle{}t exist. \mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_ac413011a070590a960995b21eb4e3fdb}\label{classinferno_1_1graphics_1_1_texture_manager_ac413011a070590a960995b21eb4e3fdb}} 
+\index{inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}!operator=@{operator=}}
+\index{operator=@{operator=}!inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}}\& inferno\+::graphics\+::\+Texture\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} \&\&}]{texture\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move assignment Moves the existing texture\+\_\+manager into this texture\+\_\+manager and destroys the original. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+\_\+manager} & the texture manager to be moved in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_a419b62740d0cbff686820b9b4ccc95e2}\label{classinferno_1_1graphics_1_1_texture_manager_a419b62740d0cbff686820b9b4ccc95e2}} 
+\index{inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Texture\+Handle inferno\+::graphics\+::\+Texture\+Manager\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::string}]{texture\+\_\+name }\end{DoxyParamCaption}) const}
+
+
+
+Gets the required texture. 
+
+Looks up in for the Texture\+Handle corresponding to the texture\+\_\+name stored in the file. \begin{DoxyReturn}{Returns}
+Texture\+Handle referencing the called for texture. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_a7b5b7ee8f6c1a65f63de017a933549ef}\label{classinferno_1_1graphics_1_1_texture_manager_a7b5b7ee8f6c1a65f63de017a933549ef}} 
+\index{inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}!size@{size}}
+\index{size@{size}!inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t inferno\+::graphics\+::\+Texture\+Manager\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the number of textures stored. 
+
+\begin{DoxyReturn}{Returns}
+Number of textures stored in the class. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_af860bd092645a0c99afa35d3e978f3d8}\label{classinferno_1_1graphics_1_1_texture_manager_af860bd092645a0c99afa35d3e978f3d8}} 
+\index{inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}!Unload@{Unload}}
+\index{Unload@{Unload}!inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}}
+\subsubsection{\texorpdfstring{Unload()}{Unload()}}
+{\footnotesize\ttfamily void inferno\+::graphics\+::\+Texture\+Manager\+::\+Unload (\begin{DoxyParamCaption}\item[{std\+::string}]{texture\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Unloads the texture. 
+
+Unloads the texture specified by the given texture\+\_\+name on call. 
+\begin{DoxyParams}{Parameters}
+{\em texture\+\_\+name} & String containing the ID of the texture to unload. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_ab3f3fbf66a7c133ed129e1433b1c7cee}\label{classinferno_1_1graphics_1_1_texture_manager_ab3f3fbf66a7c133ed129e1433b1c7cee}} 
+\index{inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}!Unload\+All@{Unload\+All}}
+\index{Unload\+All@{Unload\+All}!inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}}
+\subsubsection{\texorpdfstring{Unload\+All()}{UnloadAll()}}
+{\footnotesize\ttfamily void inferno\+::graphics\+::\+Texture\+Manager\+::\+Unload\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unloads all textures. 
+
+Unloads all the textures so no texture remains. ~\newline
+Simply clears out the map. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

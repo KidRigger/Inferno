@@ -11,20 +11,14 @@ SDL2/SDL.h
 -
 SDL2_image/SDL_image.h
 -
+iostream
+-
 
 /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Rectangle.hpp
 Eigen/Core
 -
 SDL2/SDL.h
 -
-
-/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Sprite.cpp
-Sprite.hpp
-/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Sprite.hpp
-
-/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Sprite.hpp
-Texture.hpp
-/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Texture.hpp
 
 /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Texture.cpp
 Texture.hpp
