@@ -16,8 +16,8 @@
 #include <vector>
 #include <map>
 
+/// The namespace containing all framework related files.
 namespace inferno {
-    /// @namespace graphics
     /// Graphics namespace contains classes used for rendering and image loading.
     namespace graphics {
         /// @class TextureManager

@@ -14,7 +14,7 @@ inferno::graphics::Texture::Texture(SDL_Renderer* renderer,
                                     std::string texture_name):
 texture_id(texture_name), hash_id(std::hash<std::string>{}(texture_name)) {
 
-    // Loads bitmap using allegro
+    // Loads bitmap using SDL_Image
     SDL_Surface *tempSurface = IMG_Load(texture_filename.c_str());
 
     if (tempSurface == nullptr) {

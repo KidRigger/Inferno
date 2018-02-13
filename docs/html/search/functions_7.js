@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['_7etexturemanager',['~TextureManager',['../classinferno_1_1graphics_1_1_texture_manager.html#a41c136bc37abea48c23ed8f6c863b63f',1,'inferno::graphics::TextureManager']]]
+  ['refresh',['Refresh',['../classinferno_1_1graphics_1_1_display.html#abb61ee638514984ecf3fb94e1fcdddec',1,'inferno::graphics::Display']]],
+  ['resize',['Resize',['../classinferno_1_1graphics_1_1_display.html#abb7ee350b8273145d1b9a4e5c3c73b58',1,'inferno::graphics::Display']]]
 ];

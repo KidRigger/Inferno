@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['unload',['Unload',['../classinferno_1_1graphics_1_1_texture_manager.html#af860bd092645a0c99afa35d3e978f3d8',1,'inferno::graphics::TextureManager']]],
-  ['unloadall',['UnloadAll',['../classinferno_1_1graphics_1_1_texture_manager.html#ab3f3fbf66a7c133ed129e1433b1c7cee',1,'inferno::graphics::TextureManager']]]
+  ['quad',['Quad',['../classinferno_1_1graphics_1_1_quad.html',1,'inferno::graphics::Quad'],['../classinferno_1_1graphics_1_1_quad.html#a2f73b62580d65d3eea736df1ffccbd1c',1,'inferno::graphics::Quad::Quad()'],['../classinferno_1_1graphics_1_1_quad.html#af922171a2ab472086c5b423dbd42c019',1,'inferno::graphics::Quad::Quad(int x, int y, int w, int h)'],['../classinferno_1_1graphics_1_1_quad.html#ac5785c12620cbc18b091f3a83750ba72',1,'inferno::graphics::Quad::Quad(Vector2 dimensions)'],['../classinferno_1_1graphics_1_1_quad.html#a374a4dd2744317ea37ff568800148b1f',1,'inferno::graphics::Quad::Quad(Vector2 position, Vector2 dimensions)'],['../classinferno_1_1graphics_1_1_quad.html#a9d9cc7ada7648b434b7401d88435530f',1,'inferno::graphics::Quad::Quad(const Quad &amp;rect)=default'],['../classinferno_1_1graphics_1_1_quad.html#a6c4c6693883f26437908876e72aba247',1,'inferno::graphics::Quad::Quad(Quad &amp;&amp;rect)=default']]]
 ];

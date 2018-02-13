@@ -1,0 +1,280 @@
+\hypertarget{classinferno_1_1graphics_1_1_quad}{}\section{inferno\+:\+:graphics\+:\+:Quad Class Reference}
+\label{classinferno_1_1graphics_1_1_quad}\index{inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}}
+
+
+Holds information about a rectangle.  
+
+
+
+
+{\ttfamily \#include $<$Quad.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_a2f73b62580d65d3eea736df1ffccbd1c}{Quad}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor, all zeros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_af922171a2ab472086c5b423dbd42c019}{Quad}} (int \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_aed2540662e5f85e5ab467517dccaf90f}{x}}, int \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_af653ab1040d4647e88487287765f7404}{y}}, int \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_a7670f2faa1d1b88bb8202d4efa968899}{w}}, int \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_af5653f4d125b24ac94ab8367e310e541}{h}})
+\begin{DoxyCompactList}\small\item\em Full Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_ac5785c12620cbc18b091f3a83750ba72}{Quad}} (Vector2 dimensions)
+\begin{DoxyCompactList}\small\item\em Special Span Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_a374a4dd2744317ea37ff568800148b1f}{Quad}} (Vector2 position, Vector2 dimensions)
+\begin{DoxyCompactList}\small\item\em Component Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_a9d9cc7ada7648b434b7401d88435530f}{Quad}} (const \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} \&rect)=default
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_a6c4c6693883f26437908876e72aba247}{Quad}} (\mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} \&\&rect)=default
+\begin{DoxyCompactList}\small\item\em Move Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} \& \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_ab2956c4435741605c0943d5e6087e690}{operator=}} (const \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} \&rect)=default
+\begin{DoxyCompactList}\small\item\em Copy assignment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} \& \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_a2061f2390481b6c66187c8c7377e085d}{operator=}} (\mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} \&\&rect)=default
+\begin{DoxyCompactList}\small\item\em Move assignment. \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Rect $\ast$ \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_a237bc92de4fbd9b77255e56c0e4c15ce}{Get\+Rect}} ()
+\begin{DoxyCompactList}\small\item\em Gets the S\+D\+L\+\_\+\+Rect for S\+DL interfacing. \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_a8e6e9aad8b00849c87acd35a614cea84}{Get\+Position}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the position of top left corner of the \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_ad7b1b10ee7f32e9486b41ae89cf0d71b}{Get\+Diagonal}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the dimensions. \end{DoxyCompactList}\item 
+int \& \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_aed2540662e5f85e5ab467517dccaf90f}{x}} (void)
+\begin{DoxyCompactList}\small\item\em Get X. \end{DoxyCompactList}\item 
+int \& \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_af653ab1040d4647e88487287765f7404}{y}} (void)
+\begin{DoxyCompactList}\small\item\em Get Y. \end{DoxyCompactList}\item 
+int \& \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_a7670f2faa1d1b88bb8202d4efa968899}{w}} (void)
+\begin{DoxyCompactList}\small\item\em Get W. \end{DoxyCompactList}\item 
+int \& \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad_af5653f4d125b24ac94ab8367e310e541}{h}} (void)
+\begin{DoxyCompactList}\small\item\em Get H. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds information about a rectangle. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_quad_a2f73b62580d65d3eea736df1ffccbd1c}\label{classinferno_1_1graphics_1_1_quad_a2f73b62580d65d3eea736df1ffccbd1c}} 
+\index{inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}!Quad@{Quad}}
+\index{Quad@{Quad}!inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}}
+\subsubsection{\texorpdfstring{Quad()}{Quad()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Quad\+::\+Quad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor, all zeros. 
+
+Constructs a \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} with at origin with 0 area. \mbox{\Hypertarget{classinferno_1_1graphics_1_1_quad_af922171a2ab472086c5b423dbd42c019}\label{classinferno_1_1graphics_1_1_quad_af922171a2ab472086c5b423dbd42c019}} 
+\index{inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}!Quad@{Quad}}
+\index{Quad@{Quad}!inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}}
+\subsubsection{\texorpdfstring{Quad()}{Quad()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Quad\+::\+Quad (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Full Constructor. 
+
+Constructs a \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} completely. 
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate of the \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. \\
+\hline
+{\em y} & The y coordinate of the \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. \\
+\hline
+{\em w} & The w width of the \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. \\
+\hline
+{\em h} & The h height of the \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_quad_ac5785c12620cbc18b091f3a83750ba72}\label{classinferno_1_1graphics_1_1_quad_ac5785c12620cbc18b091f3a83750ba72}} 
+\index{inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}!Quad@{Quad}}
+\index{Quad@{Quad}!inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}}
+\subsubsection{\texorpdfstring{Quad()}{Quad()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Quad\+::\+Quad (\begin{DoxyParamCaption}\item[{Vector2}]{dimensions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Special Span Constructor. 
+
+Takes in the span of the \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} to construct a \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} at origin with given span. 
+\begin{DoxyParams}{Parameters}
+{\em dimensions} & The dimension (diagonal) of the \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_quad_a374a4dd2744317ea37ff568800148b1f}\label{classinferno_1_1graphics_1_1_quad_a374a4dd2744317ea37ff568800148b1f}} 
+\index{inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}!Quad@{Quad}}
+\index{Quad@{Quad}!inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}}
+\subsubsection{\texorpdfstring{Quad()}{Quad()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Quad\+::\+Quad (\begin{DoxyParamCaption}\item[{Vector2}]{position,  }\item[{Vector2}]{dimensions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Component Constructor. 
+
+Takes in position and dimensions to construct a \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} at the given position 
+\begin{DoxyParams}{Parameters}
+{\em position} & The position of the top left corner of the \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. \\
+\hline
+{\em dimensions} & The dimensions (diagonal) of the \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_quad_a9d9cc7ada7648b434b7401d88435530f}\label{classinferno_1_1graphics_1_1_quad_a9d9cc7ada7648b434b7401d88435530f}} 
+\index{inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}!Quad@{Quad}}
+\index{Quad@{Quad}!inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}}
+\subsubsection{\texorpdfstring{Quad()}{Quad()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Quad\+::\+Quad (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} \&}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Copy Constructor. 
+
+Default copy construction. 
+\begin{DoxyParams}{Parameters}
+{\em rect} & Reference to the source \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_quad_a6c4c6693883f26437908876e72aba247}\label{classinferno_1_1graphics_1_1_quad_a6c4c6693883f26437908876e72aba247}} 
+\index{inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}!Quad@{Quad}}
+\index{Quad@{Quad}!inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}}
+\subsubsection{\texorpdfstring{Quad()}{Quad()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Quad\+::\+Quad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} \&\&}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Move Constructor. 
+
+Default move construction. 
+\begin{DoxyParams}{Parameters}
+{\em rect} & Rvalue reference to the source \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_quad_ad7b1b10ee7f32e9486b41ae89cf0d71b}\label{classinferno_1_1graphics_1_1_quad_ad7b1b10ee7f32e9486b41ae89cf0d71b}} 
+\index{inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}!Get\+Diagonal@{Get\+Diagonal}}
+\index{Get\+Diagonal@{Get\+Diagonal}!inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}}
+\subsubsection{\texorpdfstring{Get\+Diagonal()}{GetDiagonal()}}
+{\footnotesize\ttfamily Vector2 inferno\+::graphics\+::\+Quad\+::\+Get\+Diagonal (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the dimensions. 
+
+\begin{DoxyReturn}{Returns}
+Vector2 containing the diagonal of the \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_quad_a8e6e9aad8b00849c87acd35a614cea84}\label{classinferno_1_1graphics_1_1_quad_a8e6e9aad8b00849c87acd35a614cea84}} 
+\index{inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}!Get\+Position@{Get\+Position}}
+\index{Get\+Position@{Get\+Position}!inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}}
+\subsubsection{\texorpdfstring{Get\+Position()}{GetPosition()}}
+{\footnotesize\ttfamily Vector2 inferno\+::graphics\+::\+Quad\+::\+Get\+Position (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the position of top left corner of the \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. 
+
+\begin{DoxyReturn}{Returns}
+Vector2 containing position of top left corner of the \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_quad_a237bc92de4fbd9b77255e56c0e4c15ce}\label{classinferno_1_1graphics_1_1_quad_a237bc92de4fbd9b77255e56c0e4c15ce}} 
+\index{inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}!Get\+Rect@{Get\+Rect}}
+\index{Get\+Rect@{Get\+Rect}!inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}}
+\subsubsection{\texorpdfstring{Get\+Rect()}{GetRect()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Rect$\ast$ inferno\+::graphics\+::\+Quad\+::\+Get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the S\+D\+L\+\_\+\+Rect for S\+DL interfacing. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to S\+D\+L\+\_\+\+Rect containing data. \mbox{[}DO N\+OT D\+E\+L\+E\+TE\mbox{]}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_quad_af5653f4d125b24ac94ab8367e310e541}\label{classinferno_1_1graphics_1_1_quad_af5653f4d125b24ac94ab8367e310e541}} 
+\index{inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}!h@{h}}
+\index{h@{h}!inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}}
+\subsubsection{\texorpdfstring{h()}{h()}}
+{\footnotesize\ttfamily int\& inferno\+::graphics\+::\+Quad\+::h (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get H. 
+
+\begin{DoxyReturn}{Returns}
+The height of the \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_quad_ab2956c4435741605c0943d5e6087e690}\label{classinferno_1_1graphics_1_1_quad_ab2956c4435741605c0943d5e6087e690}} 
+\index{inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}!operator=@{operator=}}
+\index{operator=@{operator=}!inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}\& inferno\+::graphics\+::\+Quad\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} \&}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Copy assignment. 
+
+Default. 
+\begin{DoxyParams}{Parameters}
+{\em rect} & Reference to the source \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to self. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_quad_a2061f2390481b6c66187c8c7377e085d}\label{classinferno_1_1graphics_1_1_quad_a2061f2390481b6c66187c8c7377e085d}} 
+\index{inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}!operator=@{operator=}}
+\index{operator=@{operator=}!inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}\& inferno\+::graphics\+::\+Quad\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} \&\&}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Move assignment. 
+
+Default. 
+\begin{DoxyParams}{Parameters}
+{\em rect} & Rvalue reference to the source \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to self. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_quad_a7670f2faa1d1b88bb8202d4efa968899}\label{classinferno_1_1graphics_1_1_quad_a7670f2faa1d1b88bb8202d4efa968899}} 
+\index{inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}!w@{w}}
+\index{w@{w}!inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}}
+\subsubsection{\texorpdfstring{w()}{w()}}
+{\footnotesize\ttfamily int\& inferno\+::graphics\+::\+Quad\+::w (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get W. 
+
+\begin{DoxyReturn}{Returns}
+The width of the \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_quad_aed2540662e5f85e5ab467517dccaf90f}\label{classinferno_1_1graphics_1_1_quad_aed2540662e5f85e5ab467517dccaf90f}} 
+\index{inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}!x@{x}}
+\index{x@{x}!inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}}
+\subsubsection{\texorpdfstring{x()}{x()}}
+{\footnotesize\ttfamily int\& inferno\+::graphics\+::\+Quad\+::x (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get X. 
+
+\begin{DoxyReturn}{Returns}
+X coordinate of top-\/left corner. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_quad_af653ab1040d4647e88487287765f7404}\label{classinferno_1_1graphics_1_1_quad_af653ab1040d4647e88487287765f7404}} 
+\index{inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}!y@{y}}
+\index{y@{y}!inferno\+::graphics\+::\+Quad@{inferno\+::graphics\+::\+Quad}}
+\subsubsection{\texorpdfstring{y()}{y()}}
+{\footnotesize\ttfamily int\& inferno\+::graphics\+::\+Quad\+::y (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get Y. 
+
+\begin{DoxyReturn}{Returns}
+Y coordinate of top-\/left corner. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inferno/graphics/Quad.\+hpp\end{DoxyCompactItemize}

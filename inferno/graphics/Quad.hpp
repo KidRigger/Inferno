@@ -37,48 +37,76 @@ namespace inferno {
             /// Special Span Constructor.
             /// Takes in the span of the Quad to construct a
             /// Quad at origin with given span.
-            /// @param dimensions The dimension (diagonal) of the Quad
+            /// @param dimensions The dimension (diagonal) of the Quad.
             Quad(Vector2 dimensions): rect{0,0,(int)dimensions.x(),(int)dimensions.y()} {}
 
             /// Component Constructor.
             /// Takes in position and dimensions to construct a Quad
             /// at the given position
+            /// @param position The position of the top left corner of the Quad.
+            /// @param dimensions The dimensions (diagonal) of the Quad.
             Quad(Vector2 position, Vector2 dimensions): rect{(int)position.x(),(int)position.y(),(int)dimensions.x(),(int)dimensions.y()} {}
 
-            // Copy Constructor and Move Constructor
+            /// Copy Constructor.
+            /// Default copy construction.
+            /// @param rect Reference to the source Quad.
             Quad(const Quad& rect) = default;
+
+            /// Move Constructor.
+            /// Default move construction.
+            /// @param rect Rvalue reference to the source Quad.
             Quad(Quad&& rect) = default;
+
+            /// Copy assignment.
+            /// Default.
+            /// @param rect Reference to the source Quad.
+            /// @returns Reference to self.
             Quad& operator=(const Quad& rect) = default;
+
+            /// Move assignment.
+            /// Default.
+            /// @param rect Rvalue reference to the source Quad.
+            /// @returns Reference to self.
             Quad& operator=(Quad&& rect) = default;
 
-            // SDL Compatibility
+            /// Gets the SDL_Rect for SDL interfacing.
+            /// @returns Pointer to SDL_Rect containing data. [DO NOT DELETE].
             SDL_Rect* GetRect() {
                 return &rect;
             }
 
-            // Returns the position of top left corner of the Quad
+            /// Returns the position of top left corner of the Quad
+            /// @returns Vector2 containing position of top left corner of the Quad.
             Vector2 GetPosition(void) {
                 return {rect.x,rect.y};
             }
 
-            // Returns a Vector2 containing the diagonal
+            /// Returns the dimensions
+            /// @returns Vector2 containing the diagonal of the Quad.
             Vector2 GetDiagonal(void) {
                 return {rect.w,rect.h};
             }
 
-            // Getters with each data piece.
+            /// Get X.
+            /// @returns X coordinate of top-left corner.
             int& x(void) {
                 return rect.x;
             }
 
+            /// Get Y.
+            /// @returns Y coordinate of top-left corner.
             int& y(void) {
                 return rect.y;
             }
 
+            /// Get W.
+            /// @returns The width of the Quad.
             int& w(void) {
                 return rect.w;
             }
 
+            /// Get H.
+            /// @returns The height of the Quad.
             int& h(void) {
                 return rect.h;
             }

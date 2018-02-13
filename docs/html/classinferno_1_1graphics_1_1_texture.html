@@ -23,7 +23,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Inferno
    </div>
-   <div id="projectbrief">Inferno is a SDL based 2D game framework.</div>
+   <div id="projectbrief">SDL based 2D game framework.</div>
   </td>
  </tr>
  </tbody>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>inferno</b></li><li class="navelem"><b>graphics</b></li><li class="navelem"><a class="el" href="classinferno_1_1graphics_1_1_texture.html">Texture</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceinferno.html">inferno</a></li><li class="navelem"><a class="el" href="namespaceinferno_1_1graphics.html">graphics</a></li><li class="navelem"><a class="el" href="classinferno_1_1graphics_1_1_texture.html">Texture</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -102,8 +102,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5409fce4e118c09b6caa012ced780a59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classinferno_1_1graphics_1_1_texture.html">Texture</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinferno_1_1graphics_1_1_texture.html#a5409fce4e118c09b6caa012ced780a59">operator=</a> (<a class="el" href="classinferno_1_1graphics_1_1_texture.html">Texture</a> &amp;&amp;texture)</td></tr>
 <tr class="memdesc:a5409fce4e118c09b6caa012ced780a59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment.  <a href="#a5409fce4e118c09b6caa012ced780a59">More...</a><br /></td></tr>
 <tr class="separator:a5409fce4e118c09b6caa012ced780a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34c8a8546474066c66849ca2aceba0fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classinferno_1_1graphics_1_1_rectangle.html">Quad</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinferno_1_1graphics_1_1_texture.html#a34c8a8546474066c66849ca2aceba0fd">GetQuad</a> () const</td></tr>
-<tr class="memdesc:a34c8a8546474066c66849ca2aceba0fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Quad that encompases the region of the entire texture.  <a href="#a34c8a8546474066c66849ca2aceba0fd">More...</a><br /></td></tr>
+<tr class="memitem:a34c8a8546474066c66849ca2aceba0fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classinferno_1_1graphics_1_1_quad.html">Quad</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinferno_1_1graphics_1_1_texture.html#a34c8a8546474066c66849ca2aceba0fd">GetQuad</a> () const</td></tr>
+<tr class="memdesc:a34c8a8546474066c66849ca2aceba0fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classinferno_1_1graphics_1_1_quad.html" title="Holds information about a rectangle. ">Quad</a> that encompases the region of the entire texture.  <a href="#a34c8a8546474066c66849ca2aceba0fd">More...</a><br /></td></tr>
 <tr class="separator:a34c8a8546474066c66849ca2aceba0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c1750e2d5574096d70bdb4cf3b91162"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinferno_1_1graphics_1_1_texture.html#a4c1750e2d5574096d70bdb4cf3b91162">GetHash</a> () const</td></tr>
 <tr class="memdesc:a4c1750e2d5574096d70bdb4cf3b91162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the hash of the texture_id string.  <a href="#a4c1750e2d5574096d70bdb4cf3b91162">More...</a><br /></td></tr>
@@ -114,7 +114,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p class="">RAII Class for SDL_Textures. </p>
-<p class=""><a class="el" href="classinferno_1_1graphics_1_1_texture.html" title="RAII Class for SDL_Textures. ">Texture</a> is used to automatically deallocate and ease of transfer in files without the allocation responsibilities. Only a container. Use <a class="el" href="classinferno_1_1graphics_1_1_sprite.html" title="Hold a texture and required region. ">Sprite</a> for drawing. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classinferno_1_1graphics_1_1_sprite.html" title="Hold a texture and required region. ">Sprite</a> </dd></dl>
+<p class=""><a class="el" href="classinferno_1_1graphics_1_1_texture.html" title="RAII Class for SDL_Textures. ">Texture</a> is used to automatically deallocate and ease of transfer in files without the allocation responsibilities. Only a container. Use <a class="el" href="classinferno_1_1graphics_1_1_sprite.html" title="Holds a texture and the corresponding required region. ">Sprite</a> for drawing. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classinferno_1_1graphics_1_1_sprite.html" title="Holds a texture and the corresponding required region. ">Sprite</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="addc70b7b802cc870d9f4647cba3708ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#addc70b7b802cc870d9f4647cba3708ac">&#9670;&nbsp;</a></span>Texture() <span class="overload">[1/2]</span></h2>
@@ -222,7 +222,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classinferno_1_1graphics_1_1_rectangle.html">inferno::graphics::Quad</a> inferno::graphics::Texture::GetQuad </td>
+          <td class="memname"><a class="el" href="classinferno_1_1graphics_1_1_quad.html">inferno::graphics::Quad</a> inferno::graphics::Texture::GetQuad </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -230,8 +230,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the Quad that encompases the region of the entire texture. </p>
-<dl class="section return"><dt>Returns</dt><dd>Quad containing dimensions of the texture. </dd></dl>
+<p>Get the <a class="el" href="classinferno_1_1graphics_1_1_quad.html" title="Holds information about a rectangle. ">Quad</a> that encompases the region of the entire texture. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classinferno_1_1graphics_1_1_quad.html" title="Holds information about a rectangle. ">Quad</a> containing dimensions of the texture. </dd></dl>
 
 </div>
 </div>

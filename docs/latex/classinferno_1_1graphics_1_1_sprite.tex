@@ -2,7 +2,7 @@
 \label{classinferno_1_1graphics_1_1_sprite}\index{inferno\+::graphics\+::\+Sprite@{inferno\+::graphics\+::\+Sprite}}
 
 
-Hold a texture and required region.  
+Holds a texture and the corresponding required region.  
 
 
 
@@ -12,31 +12,31 @@ Hold a texture and required region.
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classinferno_1_1graphics_1_1_sprite_a404b45a087a04018e5e2bc5c7b59ab67}{Sprite}} (Texture\+Handle texture\+\_\+handle, \mbox{\hyperlink{classinferno_1_1graphics_1_1_rectangle}{Quad}} region)
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_sprite_a404b45a087a04018e5e2bc5c7b59ab67}{Sprite}} (\mbox{\hyperlink{namespaceinferno_1_1graphics_a9d719bfbfedd17b9ace9b8d603ab5a38}{Texture\+Handle}} texture\+\_\+handle, \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} region)
 \begin{DoxyCompactList}\small\item\em Simple Constructor. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classinferno_1_1graphics_1_1_sprite_a8673ad1ca45d867e83355a1ad10b752a}{Sprite}} (Texture\+Handle texture\+\_\+handle)
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_sprite_a8673ad1ca45d867e83355a1ad10b752a}{Sprite}} (\mbox{\hyperlink{namespaceinferno_1_1graphics_a9d719bfbfedd17b9ace9b8d603ab5a38}{Texture\+Handle}} texture\+\_\+handle)
 \begin{DoxyCompactList}\small\item\em Constructor without region argument. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classinferno_1_1graphics_1_1_sprite_a32f2beb808b266795f985315762e0446}\label{classinferno_1_1graphics_1_1_sprite_a32f2beb808b266795f985315762e0446}} 
 \mbox{\hyperlink{classinferno_1_1graphics_1_1_sprite_a32f2beb808b266795f985315762e0446}{Sprite}} ()=default
 \begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
-Texture\+Handle \mbox{\hyperlink{classinferno_1_1graphics_1_1_sprite_a289d0e72752f3606116c75442a710e61}{Get\+Texture}} ()
+\mbox{\hyperlink{namespaceinferno_1_1graphics_a9d719bfbfedd17b9ace9b8d603ab5a38}{Texture\+Handle}} \mbox{\hyperlink{classinferno_1_1graphics_1_1_sprite_a289d0e72752f3606116c75442a710e61}{Get\+Texture}} ()
 \begin{DoxyCompactList}\small\item\em Gets the atlas. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classinferno_1_1graphics_1_1_rectangle}{Quad}} \mbox{\hyperlink{classinferno_1_1graphics_1_1_sprite_ad2f468c9390d0d952f049daba69ef53f}{Get\+Region}} ()
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} \mbox{\hyperlink{classinferno_1_1graphics_1_1_sprite_ad2f468c9390d0d952f049daba69ef53f}{Get\+Region}} ()
 \begin{DoxyCompactList}\small\item\em Gets the region. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Hold a texture and required region. 
+Holds a texture and the corresponding required region. 
 
-A pair like structure to make a small pieced images from the texture atlas that it holds a reference to (shared\+\_\+ptr). ~\newline
-Primary image datatype. 
+A class to easily access smaller regions of a texture atlas or for frames in a particular animation sheet. ~\newline
+Use this for drawing. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classinferno_1_1graphics_1_1_sprite_a404b45a087a04018e5e2bc5c7b59ab67}\label{classinferno_1_1graphics_1_1_sprite_a404b45a087a04018e5e2bc5c7b59ab67}} 
 \index{inferno\+::graphics\+::\+Sprite@{inferno\+::graphics\+::\+Sprite}!Sprite@{Sprite}}
 \index{Sprite@{Sprite}!inferno\+::graphics\+::\+Sprite@{inferno\+::graphics\+::\+Sprite}}
 \subsubsection{\texorpdfstring{Sprite()}{Sprite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily inferno\+::graphics\+::\+Sprite\+::\+Sprite (\begin{DoxyParamCaption}\item[{Texture\+Handle}]{texture\+\_\+handle,  }\item[{\mbox{\hyperlink{classinferno_1_1graphics_1_1_rectangle}{Quad}}}]{region }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Sprite\+::\+Sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceinferno_1_1graphics_a9d719bfbfedd17b9ace9b8d603ab5a38}{Texture\+Handle}}}]{texture\+\_\+handle,  }\item[{\mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}}]{region }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -46,14 +46,14 @@ Initializes the texture and region according to the parameters.
 \begin{DoxyParams}{Parameters}
 {\em texture\+\_\+handle} & Texture\+Handle referencing to the atlas the sprite is a part of. \\
 \hline
-{\em region} & Quad containing the details of the region to be used. \\
+{\em region} & \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} containing the details of the region to be used. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classinferno_1_1graphics_1_1_sprite_a8673ad1ca45d867e83355a1ad10b752a}\label{classinferno_1_1graphics_1_1_sprite_a8673ad1ca45d867e83355a1ad10b752a}} 
 \index{inferno\+::graphics\+::\+Sprite@{inferno\+::graphics\+::\+Sprite}!Sprite@{Sprite}}
 \index{Sprite@{Sprite}!inferno\+::graphics\+::\+Sprite@{inferno\+::graphics\+::\+Sprite}}
 \subsubsection{\texorpdfstring{Sprite()}{Sprite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily inferno\+::graphics\+::\+Sprite\+::\+Sprite (\begin{DoxyParamCaption}\item[{Texture\+Handle}]{texture\+\_\+handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Sprite\+::\+Sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceinferno_1_1graphics_a9d719bfbfedd17b9ace9b8d603ab5a38}{Texture\+Handle}}}]{texture\+\_\+handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -71,20 +71,20 @@ The constructor automatically selects the entire image as a region for the const
 \index{inferno\+::graphics\+::\+Sprite@{inferno\+::graphics\+::\+Sprite}!Get\+Region@{Get\+Region}}
 \index{Get\+Region@{Get\+Region}!inferno\+::graphics\+::\+Sprite@{inferno\+::graphics\+::\+Sprite}}
 \subsubsection{\texorpdfstring{Get\+Region()}{GetRegion()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classinferno_1_1graphics_1_1_rectangle}{Quad}} inferno\+::graphics\+::\+Sprite\+::\+Get\+Region (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} inferno\+::graphics\+::\+Sprite\+::\+Get\+Region (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 Gets the region. 
 
 \begin{DoxyReturn}{Returns}
-Quad containing the source region mapped by the sprite. 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} containing the source region mapped by the sprite. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classinferno_1_1graphics_1_1_sprite_a289d0e72752f3606116c75442a710e61}\label{classinferno_1_1graphics_1_1_sprite_a289d0e72752f3606116c75442a710e61}} 
 \index{inferno\+::graphics\+::\+Sprite@{inferno\+::graphics\+::\+Sprite}!Get\+Texture@{Get\+Texture}}
 \index{Get\+Texture@{Get\+Texture}!inferno\+::graphics\+::\+Sprite@{inferno\+::graphics\+::\+Sprite}}
 \subsubsection{\texorpdfstring{Get\+Texture()}{GetTexture()}}
-{\footnotesize\ttfamily Texture\+Handle inferno\+::graphics\+::\+Sprite\+::\+Get\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceinferno_1_1graphics_a9d719bfbfedd17b9ace9b8d603ab5a38}{Texture\+Handle}} inferno\+::graphics\+::\+Sprite\+::\+Get\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 

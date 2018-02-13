@@ -14,10 +14,10 @@
 namespace inferno {
     namespace graphics {
 
-        /// @brief Hold a texture and required region.
-        /// A pair like structure to make a small pieced images from the
-        /// texture atlas that it holds a reference to (shared_ptr). \n
-        /// Primary image datatype.
+        /// @brief Holds a texture and the corresponding required region.
+        /// A class to easily access smaller regions of a texture atlas
+        /// or for frames in a particular animation sheet. \n
+        /// Use this for drawing.
         class Sprite {
 
         public:
