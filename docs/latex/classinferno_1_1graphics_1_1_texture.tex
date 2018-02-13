@@ -1,0 +1,141 @@
+\hypertarget{classinferno_1_1graphics_1_1_texture}{}\section{inferno\+:\+:graphics\+:\+:Texture Class Reference}
+\label{classinferno_1_1graphics_1_1_texture}\index{inferno\+::graphics\+::\+Texture@{inferno\+::graphics\+::\+Texture}}
+
+
+R\+A\+II Class for S\+D\+L\+\_\+\+Textures.  
+
+
+
+
+{\ttfamily \#include $<$Texture.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_addc70b7b802cc870d9f4647cba3708ac}{Texture}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer, std\+::string texture\+\_\+filename, std\+::string texture\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture}{Texture}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_a41138bbde3b666674d82e710a77ea724}\label{classinferno_1_1graphics_1_1_texture_a41138bbde3b666674d82e710a77ea724}} 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_a41138bbde3b666674d82e710a77ea724}{Texture}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_a052b89675800b158b23321b108a8f2bd}\label{classinferno_1_1graphics_1_1_texture_a052b89675800b158b23321b108a8f2bd}} 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_a052b89675800b158b23321b108a8f2bd}{Texture}} (const \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture}{Texture}} \&texture)=delete
+\begin{DoxyCompactList}\small\item\em Copy Constructor is deleted. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_a43833ad31daec597f4b10bd95b4f9e24}\label{classinferno_1_1graphics_1_1_texture_a43833ad31daec597f4b10bd95b4f9e24}} 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture}{Texture}} \& \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_a43833ad31daec597f4b10bd95b4f9e24}{operator=}} (const \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture}{Texture}} \&texture)=delete
+\begin{DoxyCompactList}\small\item\em Copy Assignment is deleted. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_ad7eaa953877ac0b52e215db9840deb53}{Texture}} (\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture}{Texture}} \&\&texture)
+\begin{DoxyCompactList}\small\item\em Move Constructor Moves the given \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture}{Texture}} into self and frees the other texture. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture}{Texture}} \& \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_a5409fce4e118c09b6caa012ced780a59}{operator=}} (\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture}{Texture}} \&\&texture)
+\begin{DoxyCompactList}\small\item\em Move assignment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_rectangle}{Quad}} \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_a34c8a8546474066c66849ca2aceba0fd}{Get\+Quad}} () const
+\begin{DoxyCompactList}\small\item\em Get the Quad that encompases the region of the entire texture. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_a4c1750e2d5574096d70bdb4cf3b91162}{Get\+Hash}} () const
+\begin{DoxyCompactList}\small\item\em Get the hash of the texture\+\_\+id string. \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_a42df17ded08f76751332725d66a88ce2}{Get\+Texture}} () const
+\begin{DoxyCompactList}\small\item\em Get a raw pointer to the bitmap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+R\+A\+II Class for S\+D\+L\+\_\+\+Textures. 
+
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture}{Texture}} is used to automatically deallocate and ease of transfer in files without the allocation responsibilities. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_addc70b7b802cc870d9f4647cba3708ac}\label{classinferno_1_1graphics_1_1_texture_addc70b7b802cc870d9f4647cba3708ac}} 
+\index{inferno\+::graphics\+::\+Texture@{inferno\+::graphics\+::\+Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!inferno\+::graphics\+::\+Texture@{inferno\+::graphics\+::\+Texture}}
+\subsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{std\+::string}]{texture\+\_\+filename,  }\item[{std\+::string}]{texture\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture}{Texture}} class. 
+
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture}{Texture}} is cosntructed to a texture in a given file using the S\+D\+L\+\_\+\+Renderer from the current display window. 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & S\+D\+L\+\_\+\+Renderer from the rendering target \\
+\hline
+{\em texture\+\_\+filename} & Path to the file containing the \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture}{Texture}} asset \\
+\hline
+{\em texture\+\_\+name} & Unique ID to refer to this texture and hashing the texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_ad7eaa953877ac0b52e215db9840deb53}\label{classinferno_1_1graphics_1_1_texture_ad7eaa953877ac0b52e215db9840deb53}} 
+\index{inferno\+::graphics\+::\+Texture@{inferno\+::graphics\+::\+Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!inferno\+::graphics\+::\+Texture@{inferno\+::graphics\+::\+Texture}}
+\subsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture}{Texture}} \&\&}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move Constructor Moves the given \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture}{Texture}} into self and frees the other texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & Other texture that is to be moved. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_a4c1750e2d5574096d70bdb4cf3b91162}\label{classinferno_1_1graphics_1_1_texture_a4c1750e2d5574096d70bdb4cf3b91162}} 
+\index{inferno\+::graphics\+::\+Texture@{inferno\+::graphics\+::\+Texture}!Get\+Hash@{Get\+Hash}}
+\index{Get\+Hash@{Get\+Hash}!inferno\+::graphics\+::\+Texture@{inferno\+::graphics\+::\+Texture}}
+\subsubsection{\texorpdfstring{Get\+Hash()}{GetHash()}}
+{\footnotesize\ttfamily size\+\_\+t inferno\+::graphics\+::\+Texture\+::\+Get\+Hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the hash of the texture\+\_\+id string. 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t containing the hash of texture\+\_\+id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_a34c8a8546474066c66849ca2aceba0fd}\label{classinferno_1_1graphics_1_1_texture_a34c8a8546474066c66849ca2aceba0fd}} 
+\index{inferno\+::graphics\+::\+Texture@{inferno\+::graphics\+::\+Texture}!Get\+Quad@{Get\+Quad}}
+\index{Get\+Quad@{Get\+Quad}!inferno\+::graphics\+::\+Texture@{inferno\+::graphics\+::\+Texture}}
+\subsubsection{\texorpdfstring{Get\+Quad()}{GetQuad()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classinferno_1_1graphics_1_1_rectangle}{inferno\+::graphics\+::\+Quad}} inferno\+::graphics\+::\+Texture\+::\+Get\+Quad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Quad that encompases the region of the entire texture. 
+
+\begin{DoxyReturn}{Returns}
+Quad containing dimensions of the texture. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_a42df17ded08f76751332725d66a88ce2}\label{classinferno_1_1graphics_1_1_texture_a42df17ded08f76751332725d66a88ce2}} 
+\index{inferno\+::graphics\+::\+Texture@{inferno\+::graphics\+::\+Texture}!Get\+Texture@{Get\+Texture}}
+\index{Get\+Texture@{Get\+Texture}!inferno\+::graphics\+::\+Texture@{inferno\+::graphics\+::\+Texture}}
+\subsubsection{\texorpdfstring{Get\+Texture()}{GetTexture()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ inferno\+::graphics\+::\+Texture\+::\+Get\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a raw pointer to the bitmap. 
+
+Facilitates the getting of the raw pointer from the class for interfacing with the rest of S\+DL functions. ~\newline
+ Do not delete the raw pointer. The responsibility lies with This class only. \begin{DoxyReturn}{Returns}
+S\+D\+L\+\_\+\+Texture pointer to the stored texture. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_a5409fce4e118c09b6caa012ced780a59}\label{classinferno_1_1graphics_1_1_texture_a5409fce4e118c09b6caa012ced780a59}} 
+\index{inferno\+::graphics\+::\+Texture@{inferno\+::graphics\+::\+Texture}!operator=@{operator=}}
+\index{operator=@{operator=}!inferno\+::graphics\+::\+Texture@{inferno\+::graphics\+::\+Texture}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture}{Texture}}\& inferno\+::graphics\+::\+Texture\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture}{Texture}} \&\&}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move assignment. 
+
+Assigns value to the new texture and deletes the older textures to prevent existance of multiple copies responsible for the same resources. 
+\begin{DoxyParams}{Parameters}
+{\em texture} & The texture that is to be moved into this. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inferno/graphics/Texture.\+hpp\item 
+inferno/graphics/Texture.\+cpp\end{DoxyCompactItemize}
