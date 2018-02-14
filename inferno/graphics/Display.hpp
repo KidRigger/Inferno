@@ -16,9 +16,11 @@
 namespace inferno {
     namespace graphics {
         /// @class Display
-        /// RAII class to handle SDL_Display screen.
-        /// Constructs and inits a SDL display and renderer for use and owns the both.
+        /// @brief RAII class to handle SDL_Display screen.
+        /// @details Constructs and initializes a SDL display and renderer for use and owns the both.
         /// Also initializes SDL as of now.
+        /// @author Anish Bhobe
+        /// @date 07.21.2017
         class Display {
         public:
             /// Constructs a display of width and height and initializes SDL (temp)
@@ -31,6 +33,15 @@ namespace inferno {
                     throw std::runtime_error("Failed to start");
                 }
 
+                if (width == 0 || height == 0) {
+                    window = SDL_CreateWindow(
+                                            "SDL Tutorial",
+                                            SDL_WINDOWPOS_UNDEFINED,
+                                            SDL_WINDOWPOS_UNDEFINED,
+                                            640, 480,
+                                            SDL_WINDOW_HIDDEN
+                                        );
+                }
                 // Create SDL window
                 window = SDL_CreateWindow(
                                         "SDL Tutorial",

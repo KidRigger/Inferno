@@ -17,7 +17,9 @@ namespace inferno {
     namespace graphics {
 
         /// @class Quad
-        /// Holds information about a rectangle.
+        /// @author Anish Bhobe
+        /// @date 07.17.2017
+        /// @brief Holds information about a rectangle.
         class Quad {
         public:
 

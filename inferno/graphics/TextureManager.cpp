@@ -10,12 +10,12 @@
 #include "Texture.hpp"
 #include <memory>
 
-void inferno::graphics::TextureManager::Load(std::string texture_filename,
+inferno::graphics::TextureHandle inferno::graphics::TextureManager::Load(std::string texture_filename,
                                         std::string texture_name) {
 
     TextureHandle handle = std::make_shared<Texture>(renderTarget,texture_filename, texture_name);
 
-    this->textures.insert({handle->GetHash(), handle});
+    return this->textures.insert({handle->GetHash(), handle}).first->second;
 }
 
 void inferno::graphics::TextureManager::LoadAll(
@@ -26,12 +26,12 @@ void inferno::graphics::TextureManager::LoadAll(
 
     if(texture_filenames.size() != texture_names.size()) {
         throw std::runtime_error("Number of filenames and \
-		number of names of textures must be same.");
+		      number of names of textures must be same.");
     }
 
     auto n = texture_filenames.size();
-    for(size_t i = 0; i<n; i++) {
-        this->Load(texture_filenames.at(i), texture_names.at(i));
+    for(size_t i = 0; i != n; ++i) {
+        this->Load(texture_filenames[i], texture_names[i]);
     }
 }
 

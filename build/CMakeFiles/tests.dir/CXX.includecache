@@ -452,13 +452,29 @@ algorithm
 catch.hpp
 /Users/Eon/Development/GameDev/Inferno/tests/catch.hpp
 
-/Users/Eon/Development/GameDev/Inferno/tests/textureload.cpp
+/Users/Eon/Development/GameDev/Inferno/tests/quad_test.cpp
+catch.hpp
+/Users/Eon/Development/GameDev/Inferno/tests/catch.hpp
+../inferno/graphics/Quad.hpp
+/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Quad.hpp
+
+/Users/Eon/Development/GameDev/Inferno/tests/texture_load.cpp
 catch.hpp
 /Users/Eon/Development/GameDev/Inferno/tests/catch.hpp
 ../inferno/graphics/Texture.hpp
 /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Texture.hpp
 ../inferno/graphics/Display.hpp
 /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Display.hpp
+
+/Users/Eon/Development/GameDev/Inferno/tests/texture_manager_test.cpp
+catch.hpp
+/Users/Eon/Development/GameDev/Inferno/tests/catch.hpp
+../inferno/graphics/TextureManager.hpp
+/Users/Eon/Development/GameDev/Inferno/inferno/graphics/TextureManager.hpp
+../inferno/graphics/Display.hpp
+/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Display.hpp
+vector
+-
 
 /usr/local/include/Eigen/Core
 src/Core/util/DisableStupidWarnings.h

@@ -5,7 +5,7 @@
 
 TEST_CASE ( "Textures are loaded" , "[texture_load]" ) {
     std::string id = "char_hurt";
-    inferno::graphics::Display disp(640,480);
+    inferno::graphics::Display disp(0,0);
     inferno::graphics::Texture tex( disp.GetRenderer() , "../character_hurt.png" , id );
     SECTION ( "Hashes are correct " ) {
         REQUIRE( tex.GetHash() == std::hash<std::string>{}(id) );

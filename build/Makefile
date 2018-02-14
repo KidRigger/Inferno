@@ -250,32 +250,86 @@ tests/catch_main.cpp.s:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/catch_main.cpp.s
 .PHONY : tests/catch_main.cpp.s
 
-tests/textureload.o: tests/textureload.cpp.o
+tests/quad_test.o: tests/quad_test.cpp.o
 
-.PHONY : tests/textureload.o
+.PHONY : tests/quad_test.o
 
 # target to build an object file
-tests/textureload.cpp.o:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/textureload.cpp.o
-.PHONY : tests/textureload.cpp.o
+tests/quad_test.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/quad_test.cpp.o
+.PHONY : tests/quad_test.cpp.o
 
-tests/textureload.i: tests/textureload.cpp.i
+tests/quad_test.i: tests/quad_test.cpp.i
 
-.PHONY : tests/textureload.i
+.PHONY : tests/quad_test.i
 
 # target to preprocess a source file
-tests/textureload.cpp.i:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/textureload.cpp.i
-.PHONY : tests/textureload.cpp.i
+tests/quad_test.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/quad_test.cpp.i
+.PHONY : tests/quad_test.cpp.i
 
-tests/textureload.s: tests/textureload.cpp.s
+tests/quad_test.s: tests/quad_test.cpp.s
 
-.PHONY : tests/textureload.s
+.PHONY : tests/quad_test.s
 
 # target to generate assembly for a file
-tests/textureload.cpp.s:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/textureload.cpp.s
-.PHONY : tests/textureload.cpp.s
+tests/quad_test.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/quad_test.cpp.s
+.PHONY : tests/quad_test.cpp.s
+
+tests/texture_load.o: tests/texture_load.cpp.o
+
+.PHONY : tests/texture_load.o
+
+# target to build an object file
+tests/texture_load.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/texture_load.cpp.o
+.PHONY : tests/texture_load.cpp.o
+
+tests/texture_load.i: tests/texture_load.cpp.i
+
+.PHONY : tests/texture_load.i
+
+# target to preprocess a source file
+tests/texture_load.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/texture_load.cpp.i
+.PHONY : tests/texture_load.cpp.i
+
+tests/texture_load.s: tests/texture_load.cpp.s
+
+.PHONY : tests/texture_load.s
+
+# target to generate assembly for a file
+tests/texture_load.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/texture_load.cpp.s
+.PHONY : tests/texture_load.cpp.s
+
+tests/texture_manager_test.o: tests/texture_manager_test.cpp.o
+
+.PHONY : tests/texture_manager_test.o
+
+# target to build an object file
+tests/texture_manager_test.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/texture_manager_test.cpp.o
+.PHONY : tests/texture_manager_test.cpp.o
+
+tests/texture_manager_test.i: tests/texture_manager_test.cpp.i
+
+.PHONY : tests/texture_manager_test.i
+
+# target to preprocess a source file
+tests/texture_manager_test.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/texture_manager_test.cpp.i
+.PHONY : tests/texture_manager_test.cpp.i
+
+tests/texture_manager_test.s: tests/texture_manager_test.cpp.s
+
+.PHONY : tests/texture_manager_test.s
+
+# target to generate assembly for a file
+tests/texture_manager_test.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/texture_manager_test.cpp.s
+.PHONY : tests/texture_manager_test.cpp.s
 
 # Help Target
 help:
@@ -299,9 +353,15 @@ help:
 	@echo "... tests/catch_main.o"
 	@echo "... tests/catch_main.i"
 	@echo "... tests/catch_main.s"
-	@echo "... tests/textureload.o"
-	@echo "... tests/textureload.i"
-	@echo "... tests/textureload.s"
+	@echo "... tests/quad_test.o"
+	@echo "... tests/quad_test.i"
+	@echo "... tests/quad_test.s"
+	@echo "... tests/texture_load.o"
+	@echo "... tests/texture_load.i"
+	@echo "... tests/texture_load.s"
+	@echo "... tests/texture_manager_test.o"
+	@echo "... tests/texture_manager_test.i"
+	@echo "... tests/texture_manager_test.s"
 .PHONY : help
 
 

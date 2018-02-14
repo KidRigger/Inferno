@@ -19,9 +19,11 @@ namespace inferno {
     namespace graphics {
         /// @class Texture
         /// @brief RAII Class for SDL_Textures.
-        /// Texture is used to automatically deallocate and ease of transfer
+        /// @details Texture is used to automatically deallocate and ease of transfer
         /// in files without the allocation responsibilities.
         /// Only a container. Use Sprite for drawing.
+        /// @author Anish Bhobe
+        /// @date 07.17.2017
         /// @see Sprite
         class Texture {
         public:

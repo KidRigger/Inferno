@@ -22,9 +22,12 @@ namespace inferno {
     namespace graphics {
         /// @class TextureManager
         /// @brief Manager class that loads and stores Textures for ease of access.
-        /// Stores the textures into a map which allows easy access using the string
+        /// @details Stores the textures into a map which allows easy access using the string
         /// ids using hashes. And stores the filename in a map to prevent reloading existing
         /// textures.
+        /// @author Ravishankar Joshi
+        /// @author Anish Bhobe
+        /// @date 01.17.2018
         class TextureManager {
         public:
             /// Minimal constructor.
@@ -61,15 +64,17 @@ namespace inferno {
 
             /// Loads a texture.
             /// Loads a texture from the given \a texture_filename and allows reaccess using the \a texture_name
+            /// Only loads a texture_name once. On reload, returns a reference to the previous load.
             /// @param texture_filename The path to file containing the texture.
             /// @param texture_name The unique identifier for the texture to recall the loaded texture.
-            void Load(std::string texture_filename, std::string texture_name);
+            TextureHandle Load(std::string texture_filename, std::string texture_name);
 
             /// Loads multiple textures together.
             /// Loads the Textures from the filesnames and saves with the corresponding
             /// IDs.
             /// @param texture_filenames The vector containing the paths for each texture.
             /// @param texture_names The IDs by which to store the textures.
+            /// @throws std::runtime_error if vector lengths are unequal.
             void LoadAll(std::vector<std::string> texture_filenames,
                          std::vector<std::string> texture_names);
 

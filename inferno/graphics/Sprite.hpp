@@ -13,11 +13,13 @@
 
 namespace inferno {
     namespace graphics {
-
+        /// @class Sprite
         /// @brief Holds a texture and the corresponding required region.
-        /// A class to easily access smaller regions of a texture atlas
+        /// @details A class to easily access smaller regions of a texture atlas
         /// or for frames in a particular animation sheet. \n
         /// Use this for drawing.
+        /// @author Anish Bhobe
+        /// @date 07.19.2017
         class Sprite {
 
         public:

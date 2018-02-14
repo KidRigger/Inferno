@@ -22,7 +22,7 @@ Manager class that loads and stores Textures for ease of access.
 \begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} \& \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager_ac413011a070590a960995b21eb4e3fdb}{operator=}} (\mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager}{Texture\+Manager}} \&\&texture\+\_\+manager)
 \begin{DoxyCompactList}\small\item\em Move assignment Moves the existing texture\+\_\+manager into this texture\+\_\+manager and destroys the original. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager_aa8a3d242633cc83fd3fe178520d15cb6}{Load}} (std\+::string texture\+\_\+filename, std\+::string texture\+\_\+name)
+\mbox{\hyperlink{namespaceinferno_1_1graphics_a9d719bfbfedd17b9ace9b8d603ab5a38}{Texture\+Handle}} \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager_a12be034ff8a7782ae575d0a2b71a361d}{Load}} (std\+::string texture\+\_\+filename, std\+::string texture\+\_\+name)
 \begin{DoxyCompactList}\small\item\em Loads a texture. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager_ae1c0a268b96073bb0c925e3523f2bc58}{Load\+All}} (std\+::vector$<$ std\+::string $>$ texture\+\_\+filenames, std\+::vector$<$ std\+::string $>$ texture\+\_\+names)
 \begin{DoxyCompactList}\small\item\em Loads multiple textures together. \end{DoxyCompactList}\item 
@@ -44,7 +44,15 @@ size\+\_\+t \mbox{\hyperlink{classinferno_1_1graphics_1_1_texture_manager_a7b5b7
 \subsection{Detailed Description}
 Manager class that loads and stores Textures for ease of access. 
 
-Stores the textures into a map which allows easy access using the string ids using hashes. And stores the filename in a map to prevent reloading existing textures. 
+Stores the textures into a map which allows easy access using the string ids using hashes. And stores the filename in a map to prevent reloading existing textures. \begin{DoxyAuthor}{Author}
+Ravishankar Joshi 
+
+Anish Bhobe 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+01.\+17.\+2018 
+\end{DoxyDate}
+
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_a06e141712b3786bae5100da3e04aff92}\label{classinferno_1_1graphics_1_1_texture_manager_a06e141712b3786bae5100da3e04aff92}} 
@@ -103,17 +111,17 @@ Gets the required texture.
 Looks up in for the Texture\+Handle corresponding to the texture\+\_\+name stored in the file. \begin{DoxyReturn}{Returns}
 Texture\+Handle referencing the called for texture. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_aa8a3d242633cc83fd3fe178520d15cb6}\label{classinferno_1_1graphics_1_1_texture_manager_aa8a3d242633cc83fd3fe178520d15cb6}} 
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_a12be034ff8a7782ae575d0a2b71a361d}\label{classinferno_1_1graphics_1_1_texture_manager_a12be034ff8a7782ae575d0a2b71a361d}} 
 \index{inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}!Load@{Load}}
 \index{Load@{Load}!inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}}
 \subsubsection{\texorpdfstring{Load()}{Load()}}
-{\footnotesize\ttfamily void inferno\+::graphics\+::\+Texture\+Manager\+::\+Load (\begin{DoxyParamCaption}\item[{std\+::string}]{texture\+\_\+filename,  }\item[{std\+::string}]{texture\+\_\+name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceinferno_1_1graphics_a9d719bfbfedd17b9ace9b8d603ab5a38}{inferno\+::graphics\+::\+Texture\+Handle}} inferno\+::graphics\+::\+Texture\+Manager\+::\+Load (\begin{DoxyParamCaption}\item[{std\+::string}]{texture\+\_\+filename,  }\item[{std\+::string}]{texture\+\_\+name }\end{DoxyParamCaption})}
 
 
 
 Loads a texture. 
 
-Loads a texture from the given {\itshape texture\+\_\+filename} and allows reaccess using the {\itshape texture\+\_\+name} 
+Loads a texture from the given {\itshape texture\+\_\+filename} and allows reaccess using the {\itshape texture\+\_\+name} Only loads a texture\+\_\+name once. On reload, returns a reference to the previous load. 
 \begin{DoxyParams}{Parameters}
 {\em texture\+\_\+filename} & The path to file containing the texture. \\
 \hline
@@ -137,6 +145,11 @@ Loads the Textures from the filesnames and saves with the corresponding I\+Ds.
 {\em texture\+\_\+names} & The I\+Ds by which to store the textures. \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & if vector lengths are unequal. \\
+\hline
+\end{DoxyExceptions}
 \mbox{\Hypertarget{classinferno_1_1graphics_1_1_texture_manager_a328ab24dd273a41437c23abafbf978c0}\label{classinferno_1_1graphics_1_1_texture_manager_a328ab24dd273a41437c23abafbf978c0}} 
 \index{inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}!operator=@{operator=}}
 \index{operator=@{operator=}!inferno\+::graphics\+::\+Texture\+Manager@{inferno\+::graphics\+::\+Texture\+Manager}}
