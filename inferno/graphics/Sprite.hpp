@@ -12,46 +12,48 @@
 #include "Texture.hpp"
 
 namespace inferno {
-    namespace graphics {
-        /// @class Sprite
-        /// @brief Holds a texture and the corresponding required region.
-        /// @details A class to easily access smaller regions of a texture atlas
-        /// or for frames in a particular animation sheet. \n
-        /// Use this for drawing.
-        /// @author Anish Bhobe
-        /// @date 07.19.2017
-        class Sprite {
+namespace graphics {
+/// @class Sprite
+/// @brief Holds a texture and the corresponding required region.
+/// @details A class to easily access smaller regions of a texture atlas
+/// or for frames in a particular animation sheet. \n
+/// Use this for drawing.
+/// @author Anish Bhobe
+/// @date 07.19.2017
+class Sprite {
 
-        public:
-            /// Simple Constructor. Initializes the texture and region according to the parameters.
-            /// @param texture_handle TextureHandle referencing to the atlas the sprite is a part of.
-            /// @param region Quad containing the details of the region to be used.
-            Sprite(TextureHandle texture_handle, Quad region):
-            txr(texture_handle),region(region) {}
+public:
+	/// Simple Constructor. Initializes the texture and region according to the parameters.
+	/// @param texture_handle TextureHandle referencing to the atlas the sprite is a part of.
+	/// @param region Quad containing the details of the region to be used.
+	Sprite(TextureHandle texture_handle, Quad region) :
+			txr(texture_handle),
+			region(region) {}
 
-            /// Constructor without region argument.
-            /// The constructor automatically selects the entire image as a region
-            /// for the construction.
-            /// @param texture_handle TextureHandle referencing to the atlas the sprite is a part of.
-            Sprite(TextureHandle texture_handle):
-            txr(texture_handle), region(texture_handle->GetQuad()) {}
+	/// Constructor without region argument.
+	/// The constructor automatically selects the entire image as a region
+	/// for the construction.
+	/// @param texture_handle TextureHandle referencing to the atlas the sprite is a part of.
+	Sprite(TextureHandle texture_handle) :
+			txr(texture_handle),
+			region(texture_handle->GetQuad()) {}
 
-            /// Default Constructor
-            Sprite() = default;
+	/// Default Constructor
+	Sprite() = default;
 
-            /// Gets the atlas
-            /// @returns TextureHandle to the texture atlas used by the sprite.
-            TextureHandle GetTexture() { return txr; }
+	/// Gets the atlas
+	/// @returns TextureHandle to the texture atlas used by the sprite.
+	TextureHandle GetTexture() { return txr; }
 
-            /// Gets the region
-            /// @returns Quad containing the source region mapped by the sprite.
-            Quad GetRegion() { return region; }
+	/// Gets the region
+	/// @returns Quad containing the source region mapped by the sprite.
+	Quad GetRegion() { return region; }
 
-        private:
-            TextureHandle txr;
-            Quad region;
-        };
-    }
-}
+private:
+	TextureHandle txr;
+	Quad region;
+};
+} // namespace graphics
+} // namespace inferno
 
 #endif // Sprite_hpp //

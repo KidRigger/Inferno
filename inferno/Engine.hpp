@@ -13,18 +13,19 @@
 #include <ctime>
 
 namespace inferno {
-    class Engine
-    {
-    private:
-        time_t previousTime;
-        bool run;
-    public:
-        Engine();
-        template <class Game> void Run();
-        static void Rest(float timeInSeconds);
-        bool IsEngineReady();
-        ~Engine();
-    };
-}
+class Engine {
+private:
+	time_t previousTime;
+	bool run;
+
+public:
+	Engine();
+	template <class Game>
+	void Run();
+	static void Rest(float timeInSeconds);
+	bool IsEngineReady();
+	~Engine();
+};
+} // namespace inferno
 
 #endif /* Engine_hpp */
