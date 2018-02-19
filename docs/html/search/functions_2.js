@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['get',['Get',['../classinferno_1_1graphics_1_1_texture_manager.html#ae2b18c9725addce31e35034ea6642fbf',1,'inferno::graphics::TextureManager']]],
-  ['getdiagonal',['GetDiagonal',['../classinferno_1_1graphics_1_1_quad.html#ad7b1b10ee7f32e9486b41ae89cf0d71b',1,'inferno::graphics::Quad']]],
-  ['gethash',['GetHash',['../classinferno_1_1graphics_1_1_texture.html#a4c1750e2d5574096d70bdb4cf3b91162',1,'inferno::graphics::Texture']]],
-  ['getposition',['GetPosition',['../classinferno_1_1graphics_1_1_quad.html#a8e6e9aad8b00849c87acd35a614cea84',1,'inferno::graphics::Quad']]],
-  ['getquad',['GetQuad',['../classinferno_1_1graphics_1_1_texture.html#a34c8a8546474066c66849ca2aceba0fd',1,'inferno::graphics::Texture']]],
-  ['getrect',['GetRect',['../classinferno_1_1graphics_1_1_quad.html#a237bc92de4fbd9b77255e56c0e4c15ce',1,'inferno::graphics::Quad']]],
-  ['getregion',['GetRegion',['../classinferno_1_1graphics_1_1_sprite.html#ad2f468c9390d0d952f049daba69ef53f',1,'inferno::graphics::Sprite']]],
-  ['getrenderer',['GetRenderer',['../classinferno_1_1graphics_1_1_display.html#a6b2bd638d5f6b07b4a5cfad4a04fab41',1,'inferno::graphics::Display']]],
-  ['gettexture',['GetTexture',['../classinferno_1_1graphics_1_1_sprite.html#a289d0e72752f3606116c75442a710e61',1,'inferno::graphics::Sprite::GetTexture()'],['../classinferno_1_1graphics_1_1_texture.html#a42df17ded08f76751332725d66a88ce2',1,'inferno::graphics::Texture::GetTexture()']]],
-  ['getwindow',['GetWindow',['../classinferno_1_1graphics_1_1_display.html#ae3eda38c23eae8e2d49bfab0ef3e2f6c',1,'inferno::graphics::Display']]]
+  ['get',['get',['../classinferno_1_1graphics_1_1_texture_manager.html#abdd3884349f80b53a7451fb3cc94dc8d',1,'inferno::graphics::TextureManager']]],
+  ['get_5fdiagonal',['get_diagonal',['../classinferno_1_1graphics_1_1_quad.html#ac74e1a04b7db17b490182fc130b010e5',1,'inferno::graphics::Quad']]],
+  ['get_5fhash',['get_hash',['../classinferno_1_1graphics_1_1_texture.html#a372544d61705f814fd1cdd399fe28175',1,'inferno::graphics::Texture']]],
+  ['get_5fposition',['get_position',['../classinferno_1_1graphics_1_1_quad.html#a831d0c73cd040595dc44188d1941bcc6',1,'inferno::graphics::Quad']]],
+  ['get_5fquad',['get_quad',['../classinferno_1_1graphics_1_1_texture.html#a710559d0540e821183c7c1b4c6b2cd92',1,'inferno::graphics::Texture']]],
+  ['get_5frect',['get_rect',['../classinferno_1_1graphics_1_1_quad.html#a104d87586cb42af3eac4a4e0bd8b2b60',1,'inferno::graphics::Quad']]],
+  ['get_5fregion',['get_region',['../classinferno_1_1graphics_1_1_sprite.html#a96641ce00e18f5f70a0b4972f1b50180',1,'inferno::graphics::Sprite']]],
+  ['get_5frenderer',['get_renderer',['../classinferno_1_1graphics_1_1_display.html#a59e0f807f1012e45d4558ff6d72f0542',1,'inferno::graphics::Display']]],
+  ['get_5ftexture',['get_texture',['../classinferno_1_1graphics_1_1_sprite.html#a40ecbad17392046d9a019405b0705011',1,'inferno::graphics::Sprite::get_texture()'],['../classinferno_1_1graphics_1_1_texture.html#ab6961dc8a3c043744b518c73edae0890',1,'inferno::graphics::Texture::get_texture()']]],
+  ['get_5fwindow',['get_window',['../classinferno_1_1graphics_1_1_display.html#aadba4fc2483f0d4b5a2ab24983c0a288',1,'inferno::graphics::Display']]]
 ];

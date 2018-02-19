@@ -10,15 +10,15 @@
 #include "Texture.hpp"
 #include <memory>
 
-inferno::graphics::TextureHandle inferno::graphics::TextureManager::Load(std::string texture_filename,
+inferno::graphics::TextureHandle inferno::graphics::TextureManager::load(std::string texture_filename,
 		std::string texture_name) {
 
 	TextureHandle handle = std::make_shared<Texture>(renderTarget, texture_filename, texture_name);
 
-	return this->textures.insert({ handle->GetHash(), handle }).first->second;
+	return this->textures.insert({ handle->get_hash(), handle }).first->second;
 }
 
-void inferno::graphics::TextureManager::LoadAll(
+void inferno::graphics::TextureManager::load_all(
 		std::vector<std::string> texture_filenames,
 		std::vector<std::string> texture_names) {
 
@@ -31,21 +31,21 @@ void inferno::graphics::TextureManager::LoadAll(
 
 	auto n = texture_filenames.size();
 	for (size_t i = 0; i != n; ++i) {
-		this->Load(texture_filenames[i], texture_names[i]);
+		this->load(texture_filenames[i], texture_names[i]);
 	}
 }
 
-void inferno::graphics::TextureManager::Unload(std::string texture_name) {
+void inferno::graphics::TextureManager::unload(std::string texture_name) {
 
 	this->textures.erase(std::hash<std::string>{}(texture_name));
 }
 
-void inferno::graphics::TextureManager::UnloadAll() {
+void inferno::graphics::TextureManager::unload_all() {
 	this->textures.clear();
 }
 
 inferno::graphics::TextureHandle
-inferno::graphics::TextureManager::Get(std::string texture_name) const {
+inferno::graphics::TextureManager::get(std::string texture_name) const {
 	auto iterator = this->textures.find(std::hash<std::string>{}(texture_name));
 	if (iterator == this->textures.end()) {
 		throw std::runtime_error("No such texture with name " + texture_name);
@@ -55,5 +55,5 @@ inferno::graphics::TextureManager::Get(std::string texture_name) const {
 
 inferno::graphics::TextureHandle
 		inferno::graphics::TextureManager::operator[](std::string texture_name) const {
-	return this->Get(texture_name);
+	return this->get(texture_name);
 }

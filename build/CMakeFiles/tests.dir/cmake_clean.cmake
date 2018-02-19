@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/tests.dir/tests/texture_manager_test.cpp.o"
   "CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.o"
   "CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.o"
+  "CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.o"
   "tests.pdb"
   "tests"
 )

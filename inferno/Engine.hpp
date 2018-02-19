@@ -16,14 +16,14 @@ namespace inferno {
 class Engine {
 private:
 	time_t previousTime;
-	bool run;
+	bool running;
 
 public:
 	Engine();
 	template <class Game>
-	void Run();
-	static void Rest(float timeInSeconds);
-	bool IsEngineReady();
+	void run();
+	static void rest(float time_in_seconds);
+	bool is_engine_ready();
 	~Engine();
 };
 } // namespace inferno

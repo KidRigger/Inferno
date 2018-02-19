@@ -36,18 +36,18 @@ public:
 	/// @param texture_handle TextureHandle referencing to the atlas the sprite is a part of.
 	Sprite(TextureHandle texture_handle) :
 			txr(texture_handle),
-			region(texture_handle->GetQuad()) {}
+			region(texture_handle->get_quad()) {}
 
 	/// Default Constructor
 	Sprite() = default;
 
 	/// Gets the atlas
 	/// @returns TextureHandle to the texture atlas used by the sprite.
-	TextureHandle GetTexture() { return txr; }
+	TextureHandle get_texture() { return txr; }
 
 	/// Gets the region
 	/// @returns Quad containing the source region mapped by the sprite.
-	Quad GetRegion() { return region; }
+	Quad get_region() { return region; }
 
 private:
 	TextureHandle txr;

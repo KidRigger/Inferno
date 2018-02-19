@@ -1,0 +1,118 @@
+\hypertarget{classinferno_1_1graphics_1_1_renderer}{}\section{inferno\+:\+:graphics\+:\+:Renderer Class Reference}
+\label{classinferno_1_1graphics_1_1_renderer}\index{inferno\+::graphics\+::\+Renderer@{inferno\+::graphics\+::\+Renderer}}
+
+
+Holds the sprite to render, sorts and renders at the call.  
+
+
+
+
+{\ttfamily \#include $<$Renderer.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classinferno_1_1graphics_1_1_renderer_a78582146833f7a01fc9a11edae613d51}{Renderer}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Simple constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinferno_1_1graphics_1_1_renderer_a2ce12da4c416e5c3873a8cf40255c6c4}{draw}} (\mbox{\hyperlink{classinferno_1_1graphics_1_1_sprite}{Sprite}} sprite, Vector2 position)
+\begin{DoxyCompactList}\small\item\em Draws on the screen using sprite and position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinferno_1_1graphics_1_1_renderer_a0fece22ee034838860dbfc4e11281895}{draw}} (\mbox{\hyperlink{classinferno_1_1graphics_1_1_sprite}{Sprite}} sprite, \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} dest\+\_\+region)
+\begin{DoxyCompactList}\small\item\em Draws on the screen using sprite and destination \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinferno_1_1graphics_1_1_renderer_a5f72164c93ad346bce319c61fdecaab8}{draw}} (\mbox{\hyperlink{classinferno_1_1graphics_1_1_sprite}{Sprite}} sprite, Vector2 position, float rotation, Vector2 scale)
+\begin{DoxyCompactList}\small\item\em Draws on the screen using sprite and position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_renderer_ad8a81e66396583cdb9f37d4ff45188d7}\label{classinferno_1_1graphics_1_1_renderer_ad8a81e66396583cdb9f37d4ff45188d7}} 
+void \mbox{\hyperlink{classinferno_1_1graphics_1_1_renderer_ad8a81e66396583cdb9f37d4ff45188d7}{render}} ()
+\begin{DoxyCompactList}\small\item\em Actually renders on the screen (T\+O\+DO) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds the sprite to render, sorts and renders at the call. 
+
+This class is used to make spritebatches such that the performance of the game increases. Use this for the rendering \begin{DoxyAuthor}{Author}
+Anish Bhobe 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+02.\+14.\+2018 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_renderer_a78582146833f7a01fc9a11edae613d51}\label{classinferno_1_1graphics_1_1_renderer_a78582146833f7a01fc9a11edae613d51}} 
+\index{inferno\+::graphics\+::\+Renderer@{inferno\+::graphics\+::\+Renderer}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!inferno\+::graphics\+::\+Renderer@{inferno\+::graphics\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Renderer()}{Renderer()}}
+{\footnotesize\ttfamily inferno\+::graphics\+::\+Renderer\+::\+Renderer (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Simple constructor. 
+
+Initializes the renderer. 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & S\+D\+L\+\_\+\+Renderer of the current render target \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_renderer_a2ce12da4c416e5c3873a8cf40255c6c4}\label{classinferno_1_1graphics_1_1_renderer_a2ce12da4c416e5c3873a8cf40255c6c4}} 
+\index{inferno\+::graphics\+::\+Renderer@{inferno\+::graphics\+::\+Renderer}!draw@{draw}}
+\index{draw@{draw}!inferno\+::graphics\+::\+Renderer@{inferno\+::graphics\+::\+Renderer}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Renderer\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classinferno_1_1graphics_1_1_sprite}{Sprite}}}]{sprite,  }\item[{Vector2}]{position }\end{DoxyParamCaption})}
+
+
+
+Draws on the screen using sprite and position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & \mbox{\hyperlink{classinferno_1_1graphics_1_1_sprite}{Sprite}} to be draw \\
+\hline
+{\em position} & Vector2 position at which to draw the sprite \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_renderer_a0fece22ee034838860dbfc4e11281895}\label{classinferno_1_1graphics_1_1_renderer_a0fece22ee034838860dbfc4e11281895}} 
+\index{inferno\+::graphics\+::\+Renderer@{inferno\+::graphics\+::\+Renderer}!draw@{draw}}
+\index{draw@{draw}!inferno\+::graphics\+::\+Renderer@{inferno\+::graphics\+::\+Renderer}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Renderer\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classinferno_1_1graphics_1_1_sprite}{Sprite}}}]{sprite,  }\item[{\mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}}]{dest\+\_\+region }\end{DoxyParamCaption})}
+
+
+
+Draws on the screen using sprite and destination \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & \mbox{\hyperlink{classinferno_1_1graphics_1_1_sprite}{Sprite}} to be draw \\
+\hline
+{\em dest\+\_\+region} & \mbox{\hyperlink{classinferno_1_1graphics_1_1_quad}{Quad}} region of screen at which to draw the sprite \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classinferno_1_1graphics_1_1_renderer_a5f72164c93ad346bce319c61fdecaab8}\label{classinferno_1_1graphics_1_1_renderer_a5f72164c93ad346bce319c61fdecaab8}} 
+\index{inferno\+::graphics\+::\+Renderer@{inferno\+::graphics\+::\+Renderer}!draw@{draw}}
+\index{draw@{draw}!inferno\+::graphics\+::\+Renderer@{inferno\+::graphics\+::\+Renderer}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Renderer\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classinferno_1_1graphics_1_1_sprite}{Sprite}}}]{sprite,  }\item[{Vector2}]{position,  }\item[{float}]{rotation,  }\item[{Vector2}]{scale }\end{DoxyParamCaption})}
+
+
+
+Draws on the screen using sprite and position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & \mbox{\hyperlink{classinferno_1_1graphics_1_1_sprite}{Sprite}} to be draw \\
+\hline
+{\em position} & Vector2 position at which to draw the sprite \\
+\hline
+{\em rotation} & The rotation of the sprite around center \\
+\hline
+{\em scale} & The scaling of the sprite in the two dimensions. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inferno/graphics/Renderer.\+hpp\item 
+inferno/graphics/Renderer.\+cpp\end{DoxyCompactItemize}

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['load',['Load',['../classinferno_1_1graphics_1_1_texture_manager.html#a12be034ff8a7782ae575d0a2b71a361d',1,'inferno::graphics::TextureManager']]],
-  ['loadall',['LoadAll',['../classinferno_1_1graphics_1_1_texture_manager.html#ae1c0a268b96073bb0c925e3523f2bc58',1,'inferno::graphics::TextureManager']]]
+  ['load',['load',['../classinferno_1_1graphics_1_1_texture_manager.html#ab3a97b088af8a322cd88b0fe4c57a350',1,'inferno::graphics::TextureManager']]],
+  ['load_5fall',['load_all',['../classinferno_1_1graphics_1_1_texture_manager.html#a66e9bc4c559810895c3ecc96ed0d4158',1,'inferno::graphics::TextureManager']]]
 ];

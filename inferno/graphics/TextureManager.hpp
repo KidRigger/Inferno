@@ -63,31 +63,31 @@ public:
 		return *this;
 	}
 
-	/// Loads a texture.
-	/// Loads a texture from the given \a texture_filename and allows reaccess using the \a texture_name
+	/// loads a texture.
+	/// loads a texture from the given \a texture_filename and allows reaccess using the \a texture_name
 	/// Only loads a texture_name once. On reload, returns a reference to the previous load.
 	/// @param texture_filename The path to file containing the texture.
 	/// @param texture_name The unique identifier for the texture to recall the loaded texture.
-	TextureHandle Load(std::string texture_filename, std::string texture_name);
+	TextureHandle load(std::string texture_filename, std::string texture_name);
 
-	/// Loads multiple textures together.
-	/// Loads the Textures from the filesnames and saves with the corresponding
+	/// loads multiple textures together.
+	/// loads the Textures from the filesnames and saves with the corresponding
 	/// IDs.
 	/// @param texture_filenames The vector containing the paths for each texture.
 	/// @param texture_names The IDs by which to store the textures.
 	/// @throws std::runtime_error if vector lengths are unequal.
-	void LoadAll(std::vector<std::string> texture_filenames,
+	void load_all(std::vector<std::string> texture_filenames,
 			std::vector<std::string> texture_names);
 
 	/// Unloads the texture.
 	/// Unloads the texture specified by the given texture_name on call.
 	/// @param texture_name String containing the ID of the texture to unload.
-	void Unload(std::string texture_name);
+	void unload(std::string texture_name);
 
 	/// Unloads all textures.
 	/// Unloads all the textures so no texture remains. \n
 	/// Simply clears out the map.
-	void UnloadAll();
+	void unload_all();
 
 	/// Gets the number of textures stored.
 	/// @returns Number of textures stored in the class.
@@ -97,7 +97,7 @@ public:
 	/// Looks up in for the TextureHandle corresponding to the texture_name
 	/// stored in the file.
 	/// @returns TextureHandle referencing the called for texture.
-	inferno::graphics::TextureHandle Get(std::string texture_name) const;
+	inferno::graphics::TextureHandle get(std::string texture_name) const;
 
 	/// Gets the required texture.
 	/// Looks up in for the TextureHandle corresponding to the texture_name

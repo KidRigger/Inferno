@@ -19,8 +19,8 @@ int main(int argc, char *argv[]) {
 
 	inferno::graphics::Display disp(640, 480);
 
-	inferno::graphics::TextureManager tm(disp.GetRenderer());
-	tm.Load("../character_hurt.png", "charhurt");
+	inferno::graphics::TextureManager tm(disp.get_renderer());
+	tm.load("../character_hurt.png", "charhurt");
 	inferno::graphics::TextureHandle h1 = tm["charhurt"];
 
 	SDL_Event ev;
@@ -31,11 +31,11 @@ int main(int argc, char *argv[]) {
 				running = false;
 			}
 		}
-		disp.Clear();
-		disp.Refresh();
+		disp.clear();
+		disp.refresh();
 		SDL_Delay(200);
-		SDL_RenderCopy(disp.GetRenderer(), h1->GetTexture(), NULL, h1->GetQuad().GetRect());
-		disp.Refresh();
+		SDL_RenderCopy(disp.get_renderer(), h1->get_texture(), NULL, h1->get_quad().get_rect());
+		disp.refresh();
 		SDL_Delay(200);
 	}
 

@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.7)
 
+set(CMAKE_C_COMPILER clang)
+set(CMAKE_CXX_COMPILER clang++)
+
 project(SDL2Test)
 
 IF(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
@@ -7,7 +10,7 @@ IF(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     FIND_LIBRARY(SDL2_LIB SDL2)
     FIND_LIBRARY(SDL2_I SDL2_IMAGE)
 
-    set(GRAPHICS inferno/graphics/Texture.cpp inferno/graphics/TextureManager.cpp)
+    set(GRAPHICS inferno/graphics/Texture.cpp inferno/graphics/TextureManager.cpp inferno/graphics/Renderer.cpp)
     file(GLOB TESTS tests/*.cpp)
 
     set(CMAKE_CXX_FLAGS  "-std=c++14 -F/Library/Frameworks -framework SDL2 -framework SDL2_image")

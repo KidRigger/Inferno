@@ -68,25 +68,25 @@ public:
 	/// Resize the display to the given width and height
 	/// @param width The required width of display.
 	/// @param height The required height of display.
-	void Resize(int width, int height) {
+	void resize(int width, int height) {
 		// TODO: SDL_Display resize
 	}
 
 	/// Updates the display
 	/// Refreshes the display by rendering everything in the buffer on the screen.
-	void Refresh() {
+	void refresh() {
 		SDL_RenderPresent(renderTarget);
 	}
 
 	/// Clear the display
 	/// Clears the display to blank.
-	void Clear() {
+	void clear() {
 		SDL_RenderClear(renderTarget);
 	}
 
 	/// Set background color
 	/// Sets a background color
-	void SetBackgroundColor() {
+	void set_background_color() {
 		// TODO: Color
 	}
 
@@ -98,13 +98,13 @@ public:
 
 	/// Gets a pointer to the SDL_Window
 	/// @returns SDL_Window pointer to the SDL window.
-	SDL_Window *GetWindow() {
+	SDL_Window *get_window() {
 		return window;
 	}
 
 	/// Gets a pointer to the SDL_Renderer
 	/// @returns SDL_Renderer pointer to the renderer used by the display.
-	SDL_Renderer *GetRenderer() {
+	SDL_Renderer *get_renderer() {
 		return renderTarget;
 	}
 

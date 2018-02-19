@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SDLtest.dir/main.cpp.o"
   "CMakeFiles/SDLtest.dir/inferno/graphics/Texture.cpp.o"
   "CMakeFiles/SDLtest.dir/inferno/graphics/TextureManager.cpp.o"
+  "CMakeFiles/SDLtest.dir/inferno/graphics/Renderer.cpp.o"
   "SDLtest.pdb"
   "SDLtest"
 )

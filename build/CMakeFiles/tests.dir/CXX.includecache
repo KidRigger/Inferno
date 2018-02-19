@@ -15,10 +15,22 @@ iostream
 -
 
 /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Quad.hpp
-Eigen/Core
--
 SDL2/SDL.h
 -
+Eigen/Core
+-
+
+/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Renderer.cpp
+Renderer.hpp
+/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Renderer.hpp
+
+/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Renderer.hpp
+Sprite.hpp
+/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Sprite.hpp
+
+/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Sprite.hpp
+Texture.hpp
+/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Texture.hpp
 
 /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Texture.cpp
 Texture.hpp
@@ -27,15 +39,15 @@ iostream
 -
 
 /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Texture.hpp
-string
--
+Quad.hpp
+/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Quad.hpp
 SDL2/SDL.h
 -
 SDL2_image/SDL_image.h
 -
-Quad.hpp
-/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Quad.hpp
 memory
+-
+string
 -
 
 /Users/Eon/Development/GameDev/Inferno/inferno/graphics/TextureManager.cpp
@@ -49,15 +61,15 @@ memory
 /Users/Eon/Development/GameDev/Inferno/inferno/graphics/TextureManager.hpp
 Texture.hpp
 /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Texture.hpp
-string
+map
 -
 memory
 -
 stdexcept
 -
-vector
+string
 -
-map
+vector
 -
 
 /Users/Eon/Development/GameDev/Inferno/tests/catch.hpp

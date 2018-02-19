@@ -15,7 +15,7 @@ inferno::graphics::Texture::Texture(SDL_Renderer *renderer,
 		texture_id(texture_name),
 		hash_id(std::hash<std::string>{}(texture_name)) {
 
-	// Loads bitmap using SDL_Image
+	// loads bitmap using SDL_Image
 	SDL_Surface *tempSurface = IMG_Load(texture_filename.c_str());
 
 	if (tempSurface == nullptr) {
@@ -41,11 +41,11 @@ inferno::graphics::Texture::Texture(SDL_Renderer *renderer,
 	size.h() = h;
 }
 
-inferno::graphics::Quad inferno::graphics::Texture::GetQuad() const {
+inferno::graphics::Quad inferno::graphics::Texture::get_quad() const {
 	return size;
 }
 
-size_t inferno::graphics::Texture::GetHash() const {
+size_t inferno::graphics::Texture::get_hash() const {
 	return hash_id;
 }
 

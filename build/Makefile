@@ -136,6 +136,36 @@ SDLtest/fast:
 	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/build
 .PHONY : SDLtest/fast
 
+inferno/graphics/Renderer.o: inferno/graphics/Renderer.cpp.o
+
+.PHONY : inferno/graphics/Renderer.o
+
+# target to build an object file
+inferno/graphics/Renderer.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.o
+	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/Renderer.cpp.o
+.PHONY : inferno/graphics/Renderer.cpp.o
+
+inferno/graphics/Renderer.i: inferno/graphics/Renderer.cpp.i
+
+.PHONY : inferno/graphics/Renderer.i
+
+# target to preprocess a source file
+inferno/graphics/Renderer.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.i
+	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/Renderer.cpp.i
+.PHONY : inferno/graphics/Renderer.cpp.i
+
+inferno/graphics/Renderer.s: inferno/graphics/Renderer.cpp.s
+
+.PHONY : inferno/graphics/Renderer.s
+
+# target to generate assembly for a file
+inferno/graphics/Renderer.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.s
+	$(MAKE) -f CMakeFiles/SDLtest.dir/build.make CMakeFiles/SDLtest.dir/inferno/graphics/Renderer.cpp.s
+.PHONY : inferno/graphics/Renderer.cpp.s
+
 inferno/graphics/Texture.o: inferno/graphics/Texture.cpp.o
 
 .PHONY : inferno/graphics/Texture.o
@@ -341,6 +371,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... tests"
 	@echo "... SDLtest"
+	@echo "... inferno/graphics/Renderer.o"
+	@echo "... inferno/graphics/Renderer.i"
+	@echo "... inferno/graphics/Renderer.s"
 	@echo "... inferno/graphics/Texture.o"
 	@echo "... inferno/graphics/Texture.i"
 	@echo "... inferno/graphics/Texture.s"

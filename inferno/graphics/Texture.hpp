@@ -68,11 +68,11 @@ public:
 
 	/// @brief Get the Quad that encompases the region of the entire texture.
 	/// @returns Quad containing dimensions of the texture.
-	Quad GetQuad() const;
+	Quad get_quad() const;
 
 	/// @brief Get the hash of the texture_id string
 	/// @returns size_t containing the hash of texture_id.
-	size_t GetHash() const;
+	size_t get_hash() const;
 
 	/// @brief Get a raw pointer to the bitmap.
 	/// Facilitates the getting of the raw pointer from the class for
@@ -80,7 +80,7 @@ public:
 	/// Do not delete the raw pointer. The responsibility lies with This
 	/// class only.
 	/// @returns SDL_Texture pointer to the stored texture.
-	SDL_Texture *GetTexture() const { return texture_bitmap; };
+	SDL_Texture *get_texture() const { return texture_bitmap; };
 
 	// Dtor
 	~Texture();

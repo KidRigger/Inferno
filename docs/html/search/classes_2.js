@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sprite',['Sprite',['../classinferno_1_1graphics_1_1_sprite.html',1,'inferno::graphics']]]
+  ['renderer',['Renderer',['../classinferno_1_1graphics_1_1_renderer.html',1,'inferno::graphics']]]
 ];

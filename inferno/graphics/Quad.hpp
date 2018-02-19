@@ -75,19 +75,19 @@ public:
 
 	/// Gets the SDL_Rect for SDL interfacing.
 	/// @returns Pointer to SDL_Rect containing data. [DO NOT DELETE].
-	SDL_Rect *GetRect() {
+	SDL_Rect *get_rect() {
 		return &rect;
 	}
 
 	/// Returns the position of top left corner of the Quad
 	/// @returns Vector2 containing position of top left corner of the Quad.
-	Vector2 GetPosition(void) {
+	Vector2 get_position(void) {
 		return { rect.x, rect.y };
 	}
 
 	/// Returns the dimensions
 	/// @returns Vector2 containing the diagonal of the Quad.
-	Vector2 GetDiagonal(void) {
+	Vector2 get_diagonal(void) {
 		return { rect.w, rect.h };
 	}
 

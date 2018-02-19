@@ -9,20 +9,46 @@
 #ifndef Renderer_hpp
 #define Renderer_hpp
 
+#include "Sprite.hpp"
+
 namespace inferno {
 namespace graphics {
+/// @class Renderer
+/// @brief Holds the sprite to render, sorts and renders at the call.
+/// @details This class is used to make spritebatches such that the performance
+/// of the game increases.
+/// Use this for the rendering
+/// @author Anish Bhobe
+/// @date 02.14.2018
 class Renderer {
 public:
+	/// Simple constructor. Initializes the renderer.
+	/// @param renderer SDL_Renderer of the current render target
 	Renderer(SDL_Renderer *renderer) :
 			renderer(renderer) {}
-	void Draw(Sprite sprite, Vector2 position);
-	void Draw(Sprite sprite, Quad dest_region);
-	void Draw(Sprite sprite, Vector2 position, float rotation, Vector2 scale);
-	void Render();
+	/// Draws on the screen using sprite and position
+	/// @param sprite Sprite to be draw
+	/// @param position Vector2 position at which to draw the sprite
+	void draw(Sprite sprite, Vector2 position);
+
+	/// Draws on the screen using sprite and destination Quad
+	/// @param sprite Sprite to be draw
+	/// @param dest_region Quad region of screen at which to draw the sprite
+	void draw(Sprite sprite, Quad dest_region);
+
+	/// Draws on the screen using sprite and position
+	/// @param sprite Sprite to be draw
+	/// @param position Vector2 position at which to draw the sprite
+	/// @param rotation The rotation of the sprite around center
+	/// @param scale The scaling of the sprite in the two dimensions.
+	void draw(Sprite sprite, Vector2 position, float rotation, Vector2 scale);
+
+	/// Actually renders on the screen (TODO)
+	void render();
 
 private:
 	SDL_Renderer *renderer;
-}
+};
 } // namespace graphics
 } // namespace inferno
 

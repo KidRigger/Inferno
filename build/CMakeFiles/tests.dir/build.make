@@ -60,15 +60,15 @@ include CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/tests/catch_main.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/tests/catch_main.cpp.o: ../tests/catch_main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Eon/Development/GameDev/Inferno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/tests/catch_main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/tests/catch_main.cpp.o -c /Users/Eon/Development/GameDev/Inferno/tests/catch_main.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/tests/catch_main.cpp.o -c /Users/Eon/Development/GameDev/Inferno/tests/catch_main.cpp
 
 CMakeFiles/tests.dir/tests/catch_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/catch_main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Eon/Development/GameDev/Inferno/tests/catch_main.cpp > CMakeFiles/tests.dir/tests/catch_main.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Eon/Development/GameDev/Inferno/tests/catch_main.cpp > CMakeFiles/tests.dir/tests/catch_main.cpp.i
 
 CMakeFiles/tests.dir/tests/catch_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/catch_main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Eon/Development/GameDev/Inferno/tests/catch_main.cpp -o CMakeFiles/tests.dir/tests/catch_main.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Eon/Development/GameDev/Inferno/tests/catch_main.cpp -o CMakeFiles/tests.dir/tests/catch_main.cpp.s
 
 CMakeFiles/tests.dir/tests/catch_main.cpp.o.requires:
 
@@ -84,15 +84,15 @@ CMakeFiles/tests.dir/tests/catch_main.cpp.o.provides.build: CMakeFiles/tests.dir
 CMakeFiles/tests.dir/tests/quad_test.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/tests/quad_test.cpp.o: ../tests/quad_test.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Eon/Development/GameDev/Inferno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tests.dir/tests/quad_test.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/tests/quad_test.cpp.o -c /Users/Eon/Development/GameDev/Inferno/tests/quad_test.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/tests/quad_test.cpp.o -c /Users/Eon/Development/GameDev/Inferno/tests/quad_test.cpp
 
 CMakeFiles/tests.dir/tests/quad_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/quad_test.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Eon/Development/GameDev/Inferno/tests/quad_test.cpp > CMakeFiles/tests.dir/tests/quad_test.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Eon/Development/GameDev/Inferno/tests/quad_test.cpp > CMakeFiles/tests.dir/tests/quad_test.cpp.i
 
 CMakeFiles/tests.dir/tests/quad_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/quad_test.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Eon/Development/GameDev/Inferno/tests/quad_test.cpp -o CMakeFiles/tests.dir/tests/quad_test.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Eon/Development/GameDev/Inferno/tests/quad_test.cpp -o CMakeFiles/tests.dir/tests/quad_test.cpp.s
 
 CMakeFiles/tests.dir/tests/quad_test.cpp.o.requires:
 
@@ -108,15 +108,15 @@ CMakeFiles/tests.dir/tests/quad_test.cpp.o.provides.build: CMakeFiles/tests.dir/
 CMakeFiles/tests.dir/tests/texture_load.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/tests/texture_load.cpp.o: ../tests/texture_load.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Eon/Development/GameDev/Inferno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tests.dir/tests/texture_load.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/tests/texture_load.cpp.o -c /Users/Eon/Development/GameDev/Inferno/tests/texture_load.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/tests/texture_load.cpp.o -c /Users/Eon/Development/GameDev/Inferno/tests/texture_load.cpp
 
 CMakeFiles/tests.dir/tests/texture_load.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/texture_load.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Eon/Development/GameDev/Inferno/tests/texture_load.cpp > CMakeFiles/tests.dir/tests/texture_load.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Eon/Development/GameDev/Inferno/tests/texture_load.cpp > CMakeFiles/tests.dir/tests/texture_load.cpp.i
 
 CMakeFiles/tests.dir/tests/texture_load.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/texture_load.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Eon/Development/GameDev/Inferno/tests/texture_load.cpp -o CMakeFiles/tests.dir/tests/texture_load.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Eon/Development/GameDev/Inferno/tests/texture_load.cpp -o CMakeFiles/tests.dir/tests/texture_load.cpp.s
 
 CMakeFiles/tests.dir/tests/texture_load.cpp.o.requires:
 
@@ -132,15 +132,15 @@ CMakeFiles/tests.dir/tests/texture_load.cpp.o.provides.build: CMakeFiles/tests.d
 CMakeFiles/tests.dir/tests/texture_manager_test.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/tests/texture_manager_test.cpp.o: ../tests/texture_manager_test.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Eon/Development/GameDev/Inferno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tests.dir/tests/texture_manager_test.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/tests/texture_manager_test.cpp.o -c /Users/Eon/Development/GameDev/Inferno/tests/texture_manager_test.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/tests/texture_manager_test.cpp.o -c /Users/Eon/Development/GameDev/Inferno/tests/texture_manager_test.cpp
 
 CMakeFiles/tests.dir/tests/texture_manager_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/texture_manager_test.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Eon/Development/GameDev/Inferno/tests/texture_manager_test.cpp > CMakeFiles/tests.dir/tests/texture_manager_test.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Eon/Development/GameDev/Inferno/tests/texture_manager_test.cpp > CMakeFiles/tests.dir/tests/texture_manager_test.cpp.i
 
 CMakeFiles/tests.dir/tests/texture_manager_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/texture_manager_test.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Eon/Development/GameDev/Inferno/tests/texture_manager_test.cpp -o CMakeFiles/tests.dir/tests/texture_manager_test.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Eon/Development/GameDev/Inferno/tests/texture_manager_test.cpp -o CMakeFiles/tests.dir/tests/texture_manager_test.cpp.s
 
 CMakeFiles/tests.dir/tests/texture_manager_test.cpp.o.requires:
 
@@ -156,15 +156,15 @@ CMakeFiles/tests.dir/tests/texture_manager_test.cpp.o.provides.build: CMakeFiles
 CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.o: ../inferno/graphics/Texture.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Eon/Development/GameDev/Inferno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.o -c /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Texture.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.o -c /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Texture.cpp
 
 CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Texture.cpp > CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Texture.cpp > CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.i
 
 CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Texture.cpp -o CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Texture.cpp -o CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.s
 
 CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.o.requires:
 
@@ -180,15 +180,15 @@ CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.o.provides.build: CMakeFiles/t
 CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.o: ../inferno/graphics/TextureManager.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Eon/Development/GameDev/Inferno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.o -c /Users/Eon/Development/GameDev/Inferno/inferno/graphics/TextureManager.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.o -c /Users/Eon/Development/GameDev/Inferno/inferno/graphics/TextureManager.cpp
 
 CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Eon/Development/GameDev/Inferno/inferno/graphics/TextureManager.cpp > CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Eon/Development/GameDev/Inferno/inferno/graphics/TextureManager.cpp > CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.i
 
 CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Eon/Development/GameDev/Inferno/inferno/graphics/TextureManager.cpp -o CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Eon/Development/GameDev/Inferno/inferno/graphics/TextureManager.cpp -o CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.s
 
 CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.o.requires:
 
@@ -201,6 +201,30 @@ CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.o.provides: CMakeFiles/
 CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.o.provides.build: CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.o
 
 
+CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.o: ../inferno/graphics/Renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Eon/Development/GameDev/Inferno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.o -c /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Renderer.cpp
+
+CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Renderer.cpp > CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.i
+
+CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Eon/Development/GameDev/Inferno/inferno/graphics/Renderer.cpp -o CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.s
+
+CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.o.requires:
+
+.PHONY : CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.o.requires
+
+CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.o.provides: CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.o.provides.build
+.PHONY : CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.o.provides
+
+CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.o.provides.build: CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.o
+
+
 # Object files for target tests
 tests_OBJECTS = \
 "CMakeFiles/tests.dir/tests/catch_main.cpp.o" \
@@ -208,7 +232,8 @@ tests_OBJECTS = \
 "CMakeFiles/tests.dir/tests/texture_load.cpp.o" \
 "CMakeFiles/tests.dir/tests/texture_manager_test.cpp.o" \
 "CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.o" \
-"CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.o"
+"CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.o" \
+"CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.o"
 
 # External object files for target tests
 tests_EXTERNAL_OBJECTS =
@@ -219,9 +244,10 @@ tests: CMakeFiles/tests.dir/tests/texture_load.cpp.o
 tests: CMakeFiles/tests.dir/tests/texture_manager_test.cpp.o
 tests: CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.o
 tests: CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.o
+tests: CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.o
 tests: CMakeFiles/tests.dir/build.make
 tests: CMakeFiles/tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Eon/Development/GameDev/Inferno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Eon/Development/GameDev/Inferno/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -235,6 +261,7 @@ CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/tests/texture_load.cpp.o.req
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/tests/texture_manager_test.cpp.o.requires
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.o.requires
 CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.o.requires
+CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.o.requires
 
 .PHONY : CMakeFiles/tests.dir/requires
 

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Renderer.cpp" "/Users/Eon/Development/GameDev/Inferno/build/CMakeFiles/tests.dir/inferno/graphics/Renderer.cpp.o"
   "/Users/Eon/Development/GameDev/Inferno/inferno/graphics/Texture.cpp" "/Users/Eon/Development/GameDev/Inferno/build/CMakeFiles/tests.dir/inferno/graphics/Texture.cpp.o"
   "/Users/Eon/Development/GameDev/Inferno/inferno/graphics/TextureManager.cpp" "/Users/Eon/Development/GameDev/Inferno/build/CMakeFiles/tests.dir/inferno/graphics/TextureManager.cpp.o"
   "/Users/Eon/Development/GameDev/Inferno/tests/catch_main.cpp" "/Users/Eon/Development/GameDev/Inferno/build/CMakeFiles/tests.dir/tests/catch_main.cpp.o"
