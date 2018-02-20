@@ -11,8 +11,12 @@
 using inferno::graphics::Renderer;
 
 void Renderer::draw(Sprite sprite, Vector2 position) {
-	Quad temp_quad(position, sprite.get_region().get_diagonal());
-	SDL_RenderCopy(renderer, sprite.get_texture()->get_texture(), temp_quad.get_rect(), sprite.get_region().get_rect());
+    float default_rotation = 0.0;
+    Vector2 default_scale(1.0, 1.0);
+    DrawCall draw_call(sprite, position, default_rotation, default_scale);
+    this->draw_calls.push_back(draw_call);
+    //Quad temp_quad(position, sprite.get_region().get_diagonal());
+	//SDL_RenderCopy(renderer, sprite.get_texture()->get_texture(), temp_quad.get_rect(), sprite.get_region().get_rect());
 }
 
 void Renderer::draw(Sprite sprite, Quad dest_region) {
@@ -20,6 +24,8 @@ void Renderer::draw(Sprite sprite, Quad dest_region) {
 }
 
 void Renderer::draw(Sprite sprite, Vector2 position, float rotation, Vector2 scale) {
-	Quad temp_quad(position, sprite.get_region().get_diagonal());
-	SDL_RenderCopy(renderer, sprite.get_texture()->get_texture(), temp_quad.get_rect(), sprite.get_region().get_rect());
+    DrawCall draw_call(sprite, position, rotation, scale);
+    this->draw_calls.push_back(draw_call);
+    //Quad temp_quad(position, sprite.get_region().get_diagonal());
+	//SDL_RenderCopy(renderer, sprite.get_texture()->get_texture(), temp_quad.get_rect(), sprite.get_region().get_rect());
 }
