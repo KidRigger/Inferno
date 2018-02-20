@@ -48,6 +48,20 @@ public:
 
 private:
 	SDL_Renderer *renderer;
+    vector<DrawCall> draw_calls;
+    struct DrawCall{
+        Sprite sprite;
+        Vector2 position;
+        float rotation;
+        Vector2 scale;
+
+        DrawCall(Sprite sprite, Vector2 position, float rotation, Vector2 scale){
+            this->sprite = sprite;
+            this->position = position;
+            this->rotation = rotation;
+            this->scale = scale;
+        }
+    }
 };
 } // namespace graphics
 } // namespace inferno
